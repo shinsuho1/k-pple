@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -36,37 +35,30 @@
 <body>
     <header>
         <div class="header-wrap">
-            <div class="logo">
-                K-PPLE
-            </div>
-            <div class="toggle">
-                <a href="javascript:alret('준비중')" class="active">Stay</a>
-                <a href="javascript:alret('준비중')">To Go</a>
-                <div class="toggle_bg left"></div>
-            </div>
+            <ul>
+                <li class="active"><a href="#none">TTEOKBOKKI</a></li>
+                <li><a href="#none">GIMBAP</a></li>
+                <li><a href="#none">SIDE</a></li>
+                <li><a href="#none">add ingredients</a></li>
+            </ul>
         </div>
     </header>
 
-    <script>
-        let toggle_toggle_bg = document.querySelector("header .toggle .toggle_bg"),
-            toggle_btn = document.querySelectorAll("header .toggle a");
-        document.querySelectorAll("header .toggle a").forEach(function(el, index) {
-            el.addEventListener("mouseenter", function(e) {
-                document.querySelector(".toggle a.active").classList.remove("active");
-                if (index == 0) {
-                    if (toggle_toggle_bg.classList.contains("right")) toggle_toggle_bg.classList.remove("right");
-                    toggle_toggle_bg.classList.add("left");
-                    toggle_btn[index].classList.add("active");
-
-                } else if (index == 1) {
-                    if (toggle_toggle_bg.classList.contains("left")) toggle_toggle_bg.classList.remove("left");
-                    toggle_toggle_bg.classList.add("right")
-                    toggle_btn[index].classList.add("active");
-                }
-            });
-        });
-    </script>
     <main id="main_page">
+        <section class="header">
+            <article>
+                <div class="wrap">
+                    <div class="logo">
+                        K-PPLE
+                    </div>
+                    <div class="toggle">
+                        <a href="javascript:alret('준비중')" class="active">Stay</a>
+                        <a href="javascript:alret('준비중')">To Go</a>
+                        <div class="toggle_bg left"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
         <section class="s01">
             <article>
                 <div class="wrap">
@@ -111,6 +103,15 @@
                                         <li><img src="../images/common/spicy.svg" alt=""></li>
                                     </ul>
                                 </div>
+                                <div class="select-menu">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                             <div class="img-wrap">
                                 <img src="../images/main/tteokbokki01.png" alt="떡볶이">
@@ -167,7 +168,18 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -179,11 +191,23 @@
                                                 <div class="price">
                                                     +4,000
                                                 </div>
+
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option02.png" alt="옵션2">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option02.png" alt="옵션2">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Fish Cakes</h5>
@@ -199,7 +223,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -215,7 +250,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option02.png" alt="옵션2">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option02.png" alt="옵션2">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Fish Cakes</h5>
@@ -231,7 +277,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -269,6 +326,15 @@
                                         <li><img src="../images/common/spicy.svg" alt=""></li>
                                     </ul>
                                 </div>
+                                <div class="select-menu">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                             <div class="img-wrap">
                                 <img src="../images/main/tteokbokki01.png" alt="떡볶이">
@@ -325,7 +391,18 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -341,7 +418,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option02.png" alt="옵션2">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option02.png" alt="옵션2">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Fish Cakes</h5>
@@ -357,7 +445,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -373,7 +472,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option02.png" alt="옵션2">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option02.png" alt="옵션2">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Fish Cakes</h5>
@@ -389,7 +499,18 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="top-wrap">
-                                                <img src="../images/main/option01.png" alt="옵션1">
+                                                <div class="img-wrap">
+                                                    <img src="../images/main/option01.png" alt="옵션1">
+                                                </div>
+                                                <div class="select-menu">
+                                                    <a class="minus" href="#none">
+                                                        <img src="../images/common/minus.svg" alt="">
+                                                    </a>
+                                                    <div class="value">0</div>
+                                                    <a class="plus" href="#none">
+                                                        <img src="../images/common/plus.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="text01">
                                                 <h5 class="a_1">Add Extra Sliced Rice Cakes</h5>
@@ -424,6 +545,15 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -438,6 +568,15 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -452,6 +591,15 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -467,6 +615,15 @@
                                     <h5 class="a_1">Cider</h5>
                                     <p class="a_1">Saida</p>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -477,6 +634,15 @@
                                     <h5 class="a_1">Coca Cola</h5>
                                     <p class="a_1">Coca Cola</p>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -491,6 +657,15 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
+                                    <div class="select-menu">
+                                        <a class="minus" href="#none">
+                                            <img src="../images/common/minus.svg" alt="">
+                                        </a>
+                                        <div class="value">0</div>
+                                        <a class="plus" href="#none">
+                                            <img src="../images/common/plus.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -511,12 +686,123 @@
         <a href="" class="popup-close">Continue Shopping</a>
     </div>
     <div class="popup menu-more">
-        <div class="img-wrap"></div>
+        <div class="wrap">
+            <div class="thumbnail">
+                <ul class="top">
+                    <li>
+                        <div class="icon">
+                            <img src="../images/common/time.svg" alt="">
+                        </div>
+                        <span>30min</span>
+                    </li>
+                    <li class="star">
+                        <div class="icon"><img src="../images/common/star.svg" alt=""></div>
+                        <span>4.8</span>
+                    </li>
+                </ul>
+                <div class="img-wrap">
+                    <img src="../images/main/popup_thumbnail.png" alt="">
+                </div>
+                <ul class="icon-wrap">
+                    <li>
+                        <img src="../images/common/popup_icon01.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/common/popup_icon02.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/common/popup_icon03.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="text">
+                    <h3 class="a_1">Original Sindangdong Tteokbokki</h3>
+                    <p class="sub-title">신당동떡볶이 <a href=""><img src="../images/common/speak.svg" alt="speak"></a></p>
+                    <div class="more-title">
+                        <p class="more-wrap">
+                            <span class="a">
+                                Sindangdong tteokbokki is I Love Sindangdong’s
+                                signature tteokbokki with 40 years of hist hist hist
+                            </span>
+                            <span class="b">&nbsp;</span>
+                        </p>
+                        <a href="" class="more">more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li>
+                            <p>Main Ingredients</p>
+                            <span>
+                                Rice cake sticks, odeng(fish cakes), <br />
+                                various Vegetables, ramyeon(instant noodle)
+                            </span>
+                        </li>
+                        <li>
+                            <p>How To Cook</p>
+                            <span>
+                                Boil the soup and stir well for 5 minutes.
+                            </span>
+                        </li>
+                        <li>
+                            <p>How To Eat</p>
+                            <span>
+                                Eat little by little in a small bowl.
+                            </span>
+                        </li>
+                        <li>
+                            <p>Side Dish</p>
+                            <span>
+                                <a href="#none" class="slide-menu">Kimchi</a> and pickled radish are served.
+                            </span>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img src="../images/main/kimchi.png" alt="">
+                                </div>
+                                <span>
+                                    For kimchi, salted cabbage is red pepper powder,
+                                    It is a traditional Korean food made by fermenting green
+                                    onions, garlic, radishes, ginger, and salted shrimp.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#none" class="close"><img src="../images/common/popmenu_close.svg" alt=""></a>
+            </div>
+        </div>
     </div>
-    <div class="dark-bg"></div>
-
+    <div class="dark-bg">
+    </div>
     <footer>
         <div class="footer-wrap">
+            <ul>
+                <li>
+                    <a href="#none" class="language">
+                        <div class="icon-wrap"><img src="../images/common/icon_language.svg" alt="LANGUAGE"></div>
+                        <p>LANGUAGE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none" class="restaurant">
+                        <div class="icon-wrap"><img src="../images/common/icon_restaurant.svg" alt="RESTAURANT"></div>
+                        <p>RESTAURANT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none" class="top">
+                        <div class="icon-wrap"><img src="../images/common/icon_top.svg" alt="top"></div>
+                        <p>TOP</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none" class="order">
+                        <div class="icon-wrap"><img src="../images/common/order.svg" alt=""></div>
+                        <p>ORDER</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
@@ -526,6 +812,26 @@
 <script src="../js/aos.js"></script>
 <!-- <script src="../js/common.js"></script> -->
 <script src="../js/index.js"></script>
+<script>
+    let toggle_toggle_bg = document.querySelector("section.header .toggle .toggle_bg"),
+        toggle_btn = document.querySelectorAll("section.header .toggle a");
+    document.querySelectorAll("section.header .toggle a").forEach(function(el, index) {
+        el.addEventListener("mouseenter", function(e) {
+            document.querySelector(".toggle a.active").classList.remove("active");
+            if (index == 0) {
+                if (toggle_toggle_bg.classList.contains("right")) toggle_toggle_bg.classList.remove("right");
+                toggle_toggle_bg.classList.add("left");
+                toggle_btn[index].classList.add("active");
+
+            } else if (index == 1) {
+                if (toggle_toggle_bg.classList.contains("left")) toggle_toggle_bg.classList.remove("left");
+                toggle_toggle_bg.classList.add("right")
+                toggle_btn[index].classList.add("active");
+            }
+        });
+    });
+</script>
+
 <script>
     AOS.init({
         duration: 1000,
