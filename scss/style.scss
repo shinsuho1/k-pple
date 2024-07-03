@@ -135,7 +135,7 @@ main {
                             left: 50%;
                             bottom: -25px;
                             transform: translateX(-50%);
-                            padding: 20px;
+                            padding: 15px 20px;
                             background-color: #Fff;
                             border-radius: 15px;
                             gap: 20px;
@@ -206,16 +206,45 @@ main {
                 &.s01{
                     article{
                         .wrap{
+                            position: relative;
                             .video{
+                                position: absolute;
                                 width: 100%;
-                                aspect-ratio: 131/77;
+                                background-color: #Fff;
+                                @include flex-center;
+                                z-index: 5;
+                                max-width: 400px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                @include transition(1s);
                                 img{
-                                    @include img-cover;
+                                    width: 100%;
+                                    aspect-ratio: 131/77;    
+                                    object-fit: cover;
+                                    position: relative;
+                                    z-index: 2;
+                                }
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 100%;
+                                    height: 100vh;
+                                    background-color: #fff;
+                                    opacity: 1;
+                                    @include transition(1s);
+                                    z-index: 1;
                                 }
                             }
                             .box{
                                 width: 100%;
                                 padding: 10px;
+                                padding-top: 245px;
+                                opacity: 0;
+                                @include transition(1s);
                                 .center{
                                     width: 100%;
                                     padding: 10px;
@@ -328,6 +357,25 @@ main {
                             }
                         }
                     }
+                    &.load{
+                        article{
+                            .wrap{
+                                .video{
+                                    background-color: transparent;
+                                    top: 0%;
+                                    left: 50%;
+                                    transform: translate(-50%,0%);
+                                    &::before{
+                                        @include el-hide;
+                                        @include drag-off;
+                                    }
+                                }
+                                .box{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }    
                 }
             }
         }
@@ -973,6 +1021,10 @@ main {
                             background-color: #ededed;
                             span{
                                 color: #909090;
+                            }
+                            &.hide{
+                                @include el-hide;
+                                @include drag-off;
                             }
                         }
                     }
