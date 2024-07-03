@@ -346,19 +346,19 @@ section {
 
 * {
     /* Scrollbar */
-    // &::-webkit-scrollbar {
-    //     width: 5px;
-    //     height: 5px;
-    // }
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
 
-    // &::-webkit-scrollbar-thumb {
-    //     background-color: #aaa;
-    //     border-radius: 5px;
-    // }
+    &::-webkit-scrollbar-thumb {
+        background-color: #d6211e;
+        border-radius: 4px;
+    }
 
-    // &::-webkit-scrollbar-track {
-    //     background-color: transparent;
-    // }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
 
 
     /* Darg */

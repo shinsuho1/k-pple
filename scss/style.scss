@@ -10,7 +10,6 @@ $innerWidth: 1300px;
 
 main {
     background-color: #EDEDED;
-    padding-bottom: 200px;
     section{
         width: 100%;
         position: relative;
@@ -26,6 +25,7 @@ main {
         }
     }
     &#main_page {
+        padding-bottom: 200px;
         section {
             width: 100%;
             position: relative;
@@ -206,12 +206,123 @@ main {
                 &.s01{
                     article{
                         .wrap{
+                            .video{
+                                width: 100%;
+                                aspect-ratio: 131/77;
+                                img{
+                                    @include img-cover;
+                                }
+                            }
                             .box{
                                 width: 100%;
+                                padding: 10px;
                                 .center{
                                     width: 100%;
+                                    padding: 10px;
+                                    background-color: #Fff;
+                                    position: relative;
                                     .menu{
-
+                                        >li{
+                                            @include flex-column;
+                                            gap: 10px;
+                                            .option{
+                                                @include flex-column;
+                                                gap: 10px;
+                                                li{
+                                                    @include flex-center;
+                                                    gap: 5px;
+                                                    height: 90px;
+                                                    .arrow{
+                                                        @include flex-center;
+                                                        height: 88px;
+                                                        img{
+                                                            width: 8px;
+                                                            object-fit: contain;
+                                                        }
+                                                    }
+                                                    .order-list{
+                                                        .info{
+                                                            .count{
+                                                                background-color: #4885CC;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .line{
+                                        width: 100%;
+                                        margin: 20px 0;
+                                        width: 100%;
+                                        height: .6px;
+                                        background-image: url(../images/order/dash_border.svg);
+                                        background-repeat: repeat-x;
+                                    }
+                                    .cash{
+                                        @include flex-space-center;
+                                        padding: 0 5px;
+                                        margin-bottom: 20px;
+                                        ul{
+                                            @include flex-center;
+                                            gap: 7px;
+                                        }
+                                        strong{
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            color: #d6211e;
+                                        }
+                                    }
+                                    &::before{
+                                        position: absolute;
+                                        content: "";
+                                        background-image: url(../images/order/cash_bottom.png);
+                                        background-size: calc(100% / 8);
+                                        width: 100%;
+                                        height: 10px;
+                                        bottom: 0;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                    }
+                                }
+                                h3{
+                                    width: 100%;
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    margin: 50px 0;
+                                }
+                                .bottom{
+                                    @include flex-center;
+                                    padding: 0 10px;
+                                    gap: 20px;
+                                    .swiper{
+                                        width: calc(100% - 20px - 60px);
+                                        aspect-ratio: 273/60;
+                                        .swiper-wrapper{
+                                            @include fullsize;
+                                            .swiper-slide{
+                                                @include fullsize;
+                                                a{
+                                                    display: inline-flex;
+                                                    @include fullsize;
+                                                    img{
+                                                        @include img-cover;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .home{
+                                        @include flex-column-center;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        background-color: #d6211e;
+                                        gap: 5px;
+                                        font-size: 12px;
+                                        font-weight: normal;
+                                        color: #fff;
                                     }
                                 }
                             }
@@ -224,37 +335,37 @@ main {
 }
 .order-list{
     width: 100%;
-    min-height: 100px;
+    height: 110px;
     @include flex-center;    
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #dedede;
     .img-wrap{
-        width: 115px;
-        aspect-ratio: 118/101;
+        @include fullsize;
+        max-width: 120px;
         img{
             @include img-cover;
         }
     }
     .info{
-        width: calc(100% - 115px);
+        width: calc(100% - 120px);
         height: 100%;
         overflow: hidden;
         @include flex-center;
         .text{
             width: calc(100% - 50px);
             height: 100%;
-            padding: 5px 10px;
+            padding: 10px;
             h2{
                 font-family: "Noto Sans KR";
                 font-size: 20px;
                 font-weight: 600;
-                margin-bottom: 5px;
+                margin-bottom: 4px;
             }
             p{
                 font-size: 14px;
                 font-weight: 400;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
             .price{
                 font-size: 16px;
@@ -266,11 +377,34 @@ main {
         }
         .count{
             width: 50px;
+            height: 100%;
             @include flex-center;
             font-size: 28px;
             font-weight: bold;
             color: #fff;
             background-color: #144987;
+        }
+    }
+    &.option-list{
+        height: 90px;
+        .img-wrap{
+            max-width: 110px;
+        }
+        .info{
+            width: calc(100% - 110px);
+            .text{
+                h2{
+                    font-size: 18px;
+                    margin-bottom: 2px;
+                }
+                p{
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+                .price{
+                    font-size: 14px;
+                }
+            }
         }
     }
 
@@ -371,6 +505,7 @@ main {
     font-weight: normal;
     border: 1px solid #d9d9d9;
     cursor: pointer;
+    @include transition(.5s);
     .minus,.plus,.value{
         width: 31px;
         min-height: 31px;
@@ -393,11 +528,6 @@ main {
         line-height: 1;
         @include transition(.5s);
         border-radius: 50%;
-        &.view{
-            background-color: #d6211e !important;
-            z-index: 3;
-            color: #fff;
-        }
     }
     .plus{
         right: -1px;
@@ -407,6 +537,15 @@ main {
         width: calc(31px * 3);
         .plus{
             @include drag-on;
+        }
+    }
+    &.on{
+        border-color: transparent;
+        background-color: transparent;
+        .value{
+            background-color: #d6211e !important;
+            z-index: 3;
+            color: #fff;
         }
     }
 }
@@ -597,15 +736,47 @@ main {
 .a_1 {
     width: 100%;
     white-space: nowrap;
-    overflow-y: hidden;
-    overflow-x: auto;
-
+    overflow: hidden;
+    span{
+        display: inline-block;
+    }
     &::-webkit-scrollbar {
         width: 0;
         height: 0
     }
+    &.move{
+        span{
+            animation: marquee01 15s linear infinite normal forwards running;
+            &.clone{
+                animation: marquee02 15s linear infinite normal forwards running;
+            }
+        }
+    }
 }
 
+@keyframes marquee01 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee02 {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    50.01%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 
 
@@ -613,10 +784,8 @@ main {
     position: fixed;
     @include pos-center;
     z-index: 100;
-    max-width: 360px;
-    &.error{
+    &.cancel,&.warning{
         @include flex-column-center;
-        gap: 35px;
         padding: 40px 40px 25px;
         border-radius: 15px;
         background-color: #fff;
@@ -624,6 +793,7 @@ main {
         text-align: center;
         @include el-hide;
         @include drag-off;
+        max-width: 360px;
         .img-wrap{
             width: 130px;
             height: 130px;
@@ -636,23 +806,48 @@ main {
             font-weight: bold;
             font-size: 26px;
             color: #000;
-        }
-        a.popup-close{
+            margin: 35px 0
+        }  
+    }
+    &.cancel{
+        .close_btn{
             @include flex-center;
             padding: 15px 70px;
             font-size: 16px;
             font-weight: normal;
             color: #969696;
             background-color: #f7f7f7;
-            border-radius: 24px
+            border-radius: 24px;
+            white-space: nowrap
+        } 
+    }
+    &.warning{
+        a{
+            width: 100%;
+            @include flex-center;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #969696;
+            background-color: #f7f7f7;
+            border-radius: 24px;
+            white-space: nowrap;
+            margin-bottom: 5px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &.did{
+                background-color: #d6211e;
+                color: #fff;
+            }
         }
-    
     }
     &.menu-more{
         @include fullsize;
+        max-width: 400px;
         overflow-x: auto;
-        // @include el-hide;
-        // @include drag-off;
+        @include el-hide;
+        @include drag-off;
         .wrap{
             width: 100%;
             margin-top: 330px;
@@ -740,23 +935,44 @@ main {
                         justify-content: flex-start;
                         align-items: center;
                         gap: 5px;
-                        line-height: 1
+                        a{
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 19px;
+                            aspect-ratio: 19/16;
+                            img{
+                                @include img-cover;
+                            }
+                        }
                     }
                     .more-title{
                         margin-bottom: 25px;
+                        position: relative;
                         .more-wrap{
                             display: flex;
                             flex-direction: column;
                             position: relative;
+                            width: 100%;
                             span{
-                                display: inline-block;
-                                &.a{
-                                    @include ellipsis(2);
+                                &.txt{
+                                    -webkit-line-clamp: 2;
                                 }
-                                &.b{
-                                    position: relative;
-                                    border: 1px solid red;
+                                &.active{
+                                    -webkit-line-clamp: initial;
                                 }
+                            }
+                        }
+                        .more{
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            @include flex-center;
+                            // width: 51.7px;
+                            gap: 2.8px;
+                            background-color: #ededed;
+                            span{
+                                color: #909090;
                             }
                         }
                     }
@@ -789,17 +1005,15 @@ main {
                                     background-color: #000;
                                 }
                             }
-                            .more-wrap{
+                            span{
                                 font-size: 14px;
-                                font-weight: normal;
-                                
-                                
+                                font-weight: normal;    
                                 a{
                                     color: #d6211e;
                                     text-decoration: underline;
                                 }
                             }
-                            .slide{
+                            .slide {
                                 width: 100%;
                                 display: none;
                                 .img-wrap{
@@ -831,7 +1045,7 @@ main {
                         }
                     }
                 }
-                .close{
+                .close_btn{
                     @include flex-center;
                     width: 38px;
                     height: 38px;
