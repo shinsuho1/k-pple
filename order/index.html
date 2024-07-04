@@ -7,7 +7,7 @@ include_once "../include/header.html";
         <article>
             <div class="wrap">
                 <div class="video-box">
-                    <img src="../images/order/video.png" alt="video">
+                    <img src="../images/order/order_video.gif" alt="video">
                 </div>
                 <div class="box">
                     <div class="center">
@@ -150,8 +150,8 @@ include_once "../include/header.html";
         </div>
         <p>
             Wait! <br />
-            Did you show the menu <br />
-            to the employee? <br />
+            Did you show the menu
+            to the employee?
         </p>
         <a href="../main/index.html" class="did">Yes, I Did</a>
         <a href="" class="close_btn">Return to Menu</a>
@@ -164,3 +164,11 @@ include_once "../include/header.html";
 <?php
 include_once "../include/footer.html";
 ?>
+
+<script>
+    if(window.innerHeight >= document.querySelector("html").getBoundingClientRect().height){
+        document.querySelector("section.s01 .box h3").style.marginBottom = "40px";
+        document.querySelector(".footer-wrap article .wrap").style.position = "sticky";
+    }
+</script>
+

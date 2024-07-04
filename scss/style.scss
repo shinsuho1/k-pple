@@ -105,7 +105,7 @@ main {
                                 }
             
                                 &.right {
-                                    left: 50px;
+                                    left: calc(100% - 65px);
                                 }
                             }
                         }
@@ -151,7 +151,6 @@ main {
                                 }
 
                                 p {
-                                    font-family: 'Noto Sans KR';
                                     font-size: 16px;
                                     font-weight: 400;
                                     color: #909090;
@@ -179,6 +178,7 @@ main {
                 }
             }
 
+
             &.s02 {
                 padding-top: 65px;
 
@@ -202,6 +202,7 @@ main {
     &#subPage{
         &.order{
             section{
+                max-width: 500px;
                 &.s01{
                     &::before{
                         content: "";
@@ -209,6 +210,7 @@ main {
                         top: 0;
                         left: 50%;
                         transform: translateX(-50%);
+                        max-width: 500px;
                         width: 100%;
                         height: 100%;
                         background-color: #fff;
@@ -231,7 +233,7 @@ main {
                                 >*{
                                     position: absolute;
                                     width: 100%;
-                                    aspect-ratio: 16/9;
+                                    aspect-ratio: 400/233;
                                     object-fit: cover;
                                     top: 50%;
                                     left: 50%;
@@ -243,7 +245,7 @@ main {
                             &:before{
                                 content: "";
                                 width: 100%;
-                                aspect-ratio: 16/9;
+                                aspect-ratio: 400/233;
                                 display: block;
                             }
                             .box{
@@ -323,7 +325,7 @@ main {
                                     font-size: 22px;
                                     font-weight: bold;
                                     text-align: center;
-                                    margin: 50px 0 100px;
+                                    margin: 50px 0 130px;
                                 }
                             }
                         }
@@ -348,6 +350,7 @@ main {
                 &.footer-wrap{
                     article{
                         .wrap{
+                            max-width: 500px;
                             position: fixed;
                             bottom: 0;
                             z-index: 2;
@@ -414,7 +417,6 @@ main {
             height: 100%;
             padding: 10px;
             h2{
-                font-family: "Noto Sans KR";
                 font-size: 20px;
                 font-weight: 600;
                 margin-bottom: 4px;
@@ -635,7 +637,6 @@ main {
     font-size: 14px;
     font-weight: normal;
     border: 1px solid #d9d9d9;
-    cursor: pointer;
     @include transition(.5s);
     .minus,.plus,.value{
         width: 31px;
@@ -694,7 +695,6 @@ main {
             border-radius: 15px;
             background-color: #fff;
             overflow: hidden;
-            cursor: pointer;
             .img-wrap{
                 width: 130px;
                 aspect-ratio: 131/140;
@@ -816,7 +816,6 @@ main {
                 border: .5px solid #EDEDED;
                 overflow: hidden;
                 background-color: #f8f8f8;
-                cursor: pointer;
                 @include transition(.3s);
                 .top-wrap {
                     position: relative;
@@ -826,6 +825,7 @@ main {
                         @include fullsize;
                         img {
                             @include img-cover;
+                            border-radius: 10px 10px 0 0;
                         }
                     }
                 }
@@ -844,10 +844,10 @@ main {
     align-items: center;
     width: calc(100% - 20px);
     margin: 30px auto 0;
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #fff;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     @include transition(.3s);
@@ -901,24 +901,16 @@ main {
     }
     &.move{
         span{
-            animation: marquee01 15s linear infinite normal forwards running;
+            animation: marquee01 20s linear infinite;
+            padding-right: 20px;
             &.clone{
-                animation: marquee02 15s linear infinite normal forwards running;
+                animation: marquee02 20s linear infinite;
             }
         }
     }
 }
 
 @keyframes marquee01 {
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes marquee02 {
     0%{
         transform: translateX(0%);
     }
@@ -933,6 +925,14 @@ main {
     }
 }
 
+@keyframes marquee02 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
 
 
 .popup{
@@ -977,6 +977,7 @@ main {
         } 
     }
     &.warning{
+        padding: 40px 20px 25px;
         a{
             width: 100%;
             @include flex-center;
@@ -1000,7 +1001,7 @@ main {
     &.menu-more{
         @include fullsize;
         max-width: 500px;
-        overflow-x: auto;
+        // overflow-x: auto;
         @include el-hide;
         @include drag-off;
         .wrap{
@@ -1015,6 +1016,17 @@ main {
                 width: 100%;
                 aspect-ratio: 400/238;
                 position: relative;
+                .line1{
+                    content: "";
+                    width: 100px;
+                    height: 4px;
+                    background-color: #fff;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 10px;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
                 .img-wrap{
                     @include fullsize;
                     img{
@@ -1090,20 +1102,23 @@ main {
                         justify-content: flex-start;
                         align-items: center;
                         gap: 5px;
-                        a{
-                            display: inline-flex;
-                            justify-content: center;
-                            align-items: center;
+                        svg{
                             width: 19px;
                             aspect-ratio: 19/16;
-                            img{
-                                @include img-cover;
+                            cursor: pointer;
+                            &.active{
+                                path{
+                                    fill: #d6211e;
+                                }
                             }
                         }
                     }
                     .more-title{
                         margin-bottom: 25px;
                         position: relative;
+                        >.txt{
+                            -webkit-line-clamp: initial;
+                        }
                         .more-wrap{
                             display: flex;
                             flex-direction: column;
@@ -1227,20 +1242,6 @@ main {
 
 }
 
-.dark-bg{
-    position: fixed;
-    @include pos-center;
-    z-index: 90;
-    @include fullsize;
-    background-color: #000;
-    @include el-hide;
-    @include drag-off;
-    &.active{
-        @include drag-on;
-        @include el-fade;
-        opacity: .8;
-    }
-}
 
 
 

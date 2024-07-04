@@ -1,929 +1,950 @@
 <?php
-    include_once "../include/header.html";
+include_once "../include/header.html";
 ?>
-    <!-- load되면 ul안에 li로 추가 됩니다. -->
-    <header>
-        <div class="header-wrap">
-            <ul>
-            </ul>
-        </div>
-    </header>
-
-    <main id="main_page">
-        <section class="header">
-            <article>
-                <div class="wrap">
-                    <div class="logo">
-                        K-PPLE
-                    </div>
-                    <div class="toggle">
-                        <a href="javascript:alert('준비중')" class="active">Stay</a>
-                        <a href="javascript:alert('준비중')">To Go</a>
-                        <div class="toggle_bg left"></div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="s01">
-            <article>
-                <div class="wrap">
-                    <div class="main-imgae">
-                        <img src="../images/main/main01.jpg" alt="img01">
-                    </div>
-                    <div class="main-title-box">
-                        <div class="left">
-                            <h1 class="a_1">
-                                <span>
-                                    I LOVE SINDANGDONGI 
-                                </span>
-                            </h1>
-                            <p class="a_1">
-                                <span>
-                                    아이러브신당동
-                                </span>
-                            </p>
-                        </div>
-                        <div class="right">
-                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.44444 14.2663L4.22578 17L5.22222 11.211L1 7.112L6.83434 6.26629L9.44444 1L12.0545 6.26629L17.8889 7.112L13.6667 11.211L14.6631 17L9.44444 14.2663Z" fill="#FFB930" stroke="#FFB930" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <span>4.8</span>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="s02">
-            <article>
-                <div class="wrap">
-                    <h2 class="a_1" data-aos="">
-                        <span>
-                            TTEOKBOKKI MENU
-                        </span>
-                    </h2>
-                    <div class="list_1">
-                        <div class="top-wrap">
-                            <div class="icon-wrap">
-                                <ul class="top">
-                                    <li>
-                                        <img src="../images/common/icon_like.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="../images/common/icon_set.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="../images/common/icon_new.svg" alt="">
-                                    </li>
-                                </ul>
-                                <div class="bottom">
-                                    <ul class="infor">
-                                        <li><img src="../images/common/spicy.svg" alt=""></li>
-                                    </ul>
-                                </div>
-                                <div class="select-menu main_option">
-                                    <a class="minus" href="#none">
-                                        <img src="../images/common/minus.svg" alt="">
-                                    </a>
-                                    <div class="value">0</div>
-                                    <a class="plus" href="#none">
-                                        <img src="../images/common/plus.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="img-wrap">
-                                <img src="../images/main/tteokbokki01.png" alt="떡볶이">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <h4 class="a_1">
-                                <span>
-                                    Original Sindangdong Tteokbokki
-                                </span>
-                            </h4>
-                            <p class="a_1">
-                                <span>
-                                    Sindangdong Tteokbokki
-                                </span>
-                            </p>
-                            <div class="more-title">
-                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
-                                <a href="#none" class="more">more</a>
-                            </div>
-                            <ul class="person_tab">
-                                <li class="active">
-                                    <span>₩17,000</span>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.30708 5.70204C9.44793 4.56119 9.44793 2.71151 8.30708 1.57066C7.16623 0.429814 5.31655 0.429814 4.1757 1.57066C3.03485 2.71151 3.03485 4.56119 4.1757 5.70204C5.31655 6.84289 7.16623 6.84289 8.30708 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4833 13.639C11.6766 13.639 11.8333 13.4823 11.8333 13.289L9.20743 8.3498L9.36868 8.03916C9.36834 8.03898 9.368 8.03881 9.36766 8.03863C8.69984 7.69216 7.94826 7.49668 7.15453 7.49668H5.51834C4.64021 7.49668 3.81669 7.73586 3.09878 8.15222C3.03124 8.19065 2.96631 8.23142 2.90859 8.26767L2.90581 8.26941L2.90579 8.26938L2.9018 8.27196C1.46866 9.1992 0.65 10.8661 0.65 12.6019V13.289C0.65 13.4823 0.8067 13.639 1 13.639H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.6845 13.639C17.8778 13.639 18.0345 13.4823 18.0345 13.289L15.4086 8.3498L15.5699 8.03916C15.5695 8.03898 15.5692 8.03881 15.5688 8.03863C14.901 7.69216 14.1494 7.49668 13.3557 7.49668H11.7195C10.8414 7.49668 10.0179 7.73586 9.29995 8.15222C9.23241 8.19065 9.16749 8.23142 9.10976 8.26767L9.10698 8.26941L9.10696 8.26938L9.10297 8.27196C7.66983 9.1992 6.85117 10.8661 6.85117 12.6019V13.289C6.85117 13.4823 7.00787 13.639 7.20117 13.639H17.6845Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                                <li>
-                                    <span>₩23,000</span>
-                                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.05935 5.45456C9.06352 4.45039 9.06352 2.82231 8.05935 1.81815C7.05518 0.813981 5.42711 0.813981 4.42294 1.81815C3.41877 2.82231 3.41877 4.45039 4.42294 5.45456C5.42711 6.45872 7.05518 6.45872 8.05935 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4831 13.289V12.2633C11.4831 10.6954 10.7054 9.21249 9.39673 8.45293C9.33401 8.4167 9.27269 8.38325 9.20718 8.3498C8.58699 8.02786 7.89015 7.84668 7.15428 7.84668H5.51809C4.70418 7.84668 3.94044 8.06828 3.27286 8.45572C3.21154 8.49056 3.15161 8.52819 3.09168 8.56582C1.76907 9.42155 0.999756 10.9713 0.999756 12.6019V13.289H11.4831Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5085 5.70204C15.6493 4.56119 15.6493 2.71151 14.5085 1.57066C13.3676 0.429814 11.518 0.429814 10.3771 1.57066C9.23627 2.71151 9.23627 4.56119 10.3771 5.70204C11.518 6.84289 13.3676 6.84289 14.5085 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.685 13.639C17.8783 13.639 18.035 13.4823 18.035 13.289L15.4091 8.3498L15.5703 8.03916C15.57 8.03898 15.5697 8.03881 15.5693 8.03863C14.9015 7.69216 14.1499 7.49668 13.3562 7.49668H11.72C10.8419 7.49668 10.0184 7.73586 9.30044 8.15222C9.2329 8.19065 9.16797 8.23142 9.11025 8.26767L9.10747 8.26941L9.10745 8.26938L9.10346 8.27196C7.67032 9.1992 6.85166 10.8661 6.85166 12.6019V13.289C6.85166 13.4823 7.00836 13.639 7.20166 13.639H17.685Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M20.7102 5.70204C21.851 4.56119 21.851 2.71151 20.7102 1.57066C19.5693 0.429814 17.7196 0.429814 16.5788 1.57066C15.4379 2.71151 15.4379 4.56119 16.5788 5.70204C17.7196 6.84289 19.5693 6.84289 20.7102 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.8864 13.639C24.0797 13.639 24.2364 13.4823 24.2364 13.289L21.6105 8.3498L21.7718 8.03916C21.7714 8.03898 21.7711 8.03881 21.7707 8.03863C21.1029 7.69216 20.3513 7.49668 19.5576 7.49668H17.9214C17.0433 7.49668 16.2198 7.73586 15.5019 8.15222C15.4343 8.19065 15.3694 8.23142 15.3117 8.26767L15.3089 8.26941L15.3089 8.26938L15.3049 8.27196C13.8717 9.1992 13.0531 10.8661 13.0531 12.6019V13.289C13.0531 13.4823 13.2098 13.639 13.4031 13.639H23.8864Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                                <li>
-                                    <span>₩28,000</span>
-                                    <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.05959 5.45456C9.06376 4.45039 9.06376 2.82231 8.05959 1.81815C7.05543 0.813981 5.42735 0.813981 4.42319 1.81815C3.41902 2.82231 3.41902 4.45039 4.42319 5.45456C5.42735 6.45872 7.05543 6.45872 8.05959 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4833 13.289V12.2633C11.4833 10.6954 10.7056 9.21249 9.39697 8.45293C9.33425 8.4167 9.27293 8.38325 9.20743 8.3498C8.58724 8.02786 7.89039 7.84668 7.15453 7.84668H5.51834C4.70442 7.84668 3.94068 8.06828 3.2731 8.45572C3.21178 8.49056 3.15185 8.52819 3.09193 8.56582C1.76932 9.42155 1 10.9713 1 12.6019V13.289H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.6847 13.639C17.878 13.639 18.0347 13.4823 18.0347 13.289L15.4088 8.3498L15.5701 8.03916C15.5698 8.03898 15.5694 8.03881 15.5691 8.03863C14.9013 7.69216 14.1497 7.49668 13.3559 7.49668H11.7198C10.8416 7.49668 10.0181 7.73586 9.30019 8.15222C9.23265 8.19065 9.16773 8.23142 9.11 8.26767L9.10722 8.26941L9.10721 8.26938L9.10322 8.27196C7.67008 9.1992 6.85142 10.8661 6.85142 12.6019V13.289C6.85142 13.4823 7.00812 13.639 7.20142 13.639H17.6847Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M20.7104 5.70204C21.8512 4.56119 21.8512 2.71151 20.7104 1.57066C19.5696 0.429814 17.7199 0.429814 16.579 1.57066C15.4382 2.71151 15.4382 4.56119 16.579 5.70204C17.7199 6.84289 19.5696 6.84289 20.7104 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.8866 13.639C24.0799 13.639 24.2366 13.4823 24.2366 13.289L21.6107 8.3498L21.772 8.03916C21.7717 8.03898 21.7713 8.03881 21.771 8.03863C21.1032 7.69216 20.3516 7.49668 19.5578 7.49668H17.9217C17.0435 7.49668 16.22 7.73586 15.5021 8.15222C15.4346 8.19065 15.3696 8.23142 15.3119 8.26767L15.3091 8.26941L15.3091 8.26938L15.3051 8.27196C13.872 9.1992 13.0533 10.8661 13.0533 12.6019V13.289C13.0533 13.4823 13.21 13.639 13.4033 13.639H23.8866Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M26.9116 5.70204C28.0524 4.56119 28.0524 2.71151 26.9116 1.57066C25.7707 0.429814 23.921 0.429814 22.7802 1.57066C21.6393 2.71151 21.6393 4.56119 22.7802 5.70204C23.921 6.84289 25.7707 6.84289 26.9116 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M30.0878 13.639C30.2811 13.639 30.4378 13.4823 30.4378 13.289L27.8119 8.3498L27.9732 8.03916C27.9728 8.03898 27.9725 8.03881 27.9722 8.03863C27.3043 7.69216 26.5528 7.49668 25.759 7.49668H24.1228C23.2447 7.49668 22.4212 7.73586 21.7033 8.15222C21.6357 8.19065 21.5708 8.23142 21.5131 8.26767L21.5103 8.26941L21.5103 8.26938L21.5063 8.27196C20.0732 9.1992 19.2545 10.8661 19.2545 12.6019V13.289C19.2545 13.4823 19.4112 13.639 19.6045 13.639H30.0878Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                            </ul>
-                            <div class="menu-option">
-                                <div class="title">
-                                    <div class="a_1">
-                                        <span>Select additional menus that can be ordered with The with that can be ordered with The with</span>
-                                    </div>
-                                    <div class="pagination"></div>
-                                </div>
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_!">tteok chuga</p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option02.png" alt="옵션2">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Fish Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_!">odeng chuga</p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>tteok chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option02.png" alt="옵션2">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Fish Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>odeng chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>tteok chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list_1">
-                        <div class="top-wrap">
-                            <div class="icon-wrap">
-                                <ul class="top">
-                                    <li>
-                                        <img src="../images/common/icon_like.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="../images/common/icon_set.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="../images/common/icon_new.svg" alt="">
-                                    </li>
-                                </ul>
-                                <div class="bottom">
-                                    <ul class="infor">
-                                        <li><img src="../images/common/spicy.svg" alt=""></li>
-                                    </ul>
-                                </div>
-                                <div class="select-menu main_option">
-                                    <a class="minus" href="#none">
-                                        <img src="../images/common/minus.svg" alt="">
-                                    </a>
-                                    <div class="value">0</div>
-                                    <a class="plus" href="#none">
-                                        <img src="../images/common/plus.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="img-wrap">
-                                <img src="../images/main/tteokbokki01.png" alt="떡볶이">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <h4 class="a_1">
-                                <span>
-                                    Original Sindangdong Tteokbokki
-                                </span>
-                            </h4>
-                            <p class="a_1">
-                                <span>
-                                    Sindangdong Tteokbokki
-                                </span>
-                            </p>
-                            <div class="more-title">
-                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
-                                <a href="#none" class="more">more</a>
-                            </div>
-                            <ul class="person_tab">
-                                <li class="active">
-                                    <span>₩17,000</span>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.30708 5.70204C9.44793 4.56119 9.44793 2.71151 8.30708 1.57066C7.16623 0.429814 5.31655 0.429814 4.1757 1.57066C3.03485 2.71151 3.03485 4.56119 4.1757 5.70204C5.31655 6.84289 7.16623 6.84289 8.30708 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4833 13.639C11.6766 13.639 11.8333 13.4823 11.8333 13.289L9.20743 8.3498L9.36868 8.03916C9.36834 8.03898 9.368 8.03881 9.36766 8.03863C8.69984 7.69216 7.94826 7.49668 7.15453 7.49668H5.51834C4.64021 7.49668 3.81669 7.73586 3.09878 8.15222C3.03124 8.19065 2.96631 8.23142 2.90859 8.26767L2.90581 8.26941L2.90579 8.26938L2.9018 8.27196C1.46866 9.1992 0.65 10.8661 0.65 12.6019V13.289C0.65 13.4823 0.8067 13.639 1 13.639H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.6845 13.639C17.8778 13.639 18.0345 13.4823 18.0345 13.289L15.4086 8.3498L15.5699 8.03916C15.5695 8.03898 15.5692 8.03881 15.5688 8.03863C14.901 7.69216 14.1494 7.49668 13.3557 7.49668H11.7195C10.8414 7.49668 10.0179 7.73586 9.29995 8.15222C9.23241 8.19065 9.16749 8.23142 9.10976 8.26767L9.10698 8.26941L9.10696 8.26938L9.10297 8.27196C7.66983 9.1992 6.85117 10.8661 6.85117 12.6019V13.289C6.85117 13.4823 7.00787 13.639 7.20117 13.639H17.6845Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                                <li>
-                                    <span>₩23,000</span>
-                                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.05935 5.45456C9.06352 4.45039 9.06352 2.82231 8.05935 1.81815C7.05518 0.813981 5.42711 0.813981 4.42294 1.81815C3.41877 2.82231 3.41877 4.45039 4.42294 5.45456C5.42711 6.45872 7.05518 6.45872 8.05935 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4831 13.289V12.2633C11.4831 10.6954 10.7054 9.21249 9.39673 8.45293C9.33401 8.4167 9.27269 8.38325 9.20718 8.3498C8.58699 8.02786 7.89015 7.84668 7.15428 7.84668H5.51809C4.70418 7.84668 3.94044 8.06828 3.27286 8.45572C3.21154 8.49056 3.15161 8.52819 3.09168 8.56582C1.76907 9.42155 0.999756 10.9713 0.999756 12.6019V13.289H11.4831Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5085 5.70204C15.6493 4.56119 15.6493 2.71151 14.5085 1.57066C13.3676 0.429814 11.518 0.429814 10.3771 1.57066C9.23627 2.71151 9.23627 4.56119 10.3771 5.70204C11.518 6.84289 13.3676 6.84289 14.5085 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.685 13.639C17.8783 13.639 18.035 13.4823 18.035 13.289L15.4091 8.3498L15.5703 8.03916C15.57 8.03898 15.5697 8.03881 15.5693 8.03863C14.9015 7.69216 14.1499 7.49668 13.3562 7.49668H11.72C10.8419 7.49668 10.0184 7.73586 9.30044 8.15222C9.2329 8.19065 9.16797 8.23142 9.11025 8.26767L9.10747 8.26941L9.10745 8.26938L9.10346 8.27196C7.67032 9.1992 6.85166 10.8661 6.85166 12.6019V13.289C6.85166 13.4823 7.00836 13.639 7.20166 13.639H17.685Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M20.7102 5.70204C21.851 4.56119 21.851 2.71151 20.7102 1.57066C19.5693 0.429814 17.7196 0.429814 16.5788 1.57066C15.4379 2.71151 15.4379 4.56119 16.5788 5.70204C17.7196 6.84289 19.5693 6.84289 20.7102 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.8864 13.639C24.0797 13.639 24.2364 13.4823 24.2364 13.289L21.6105 8.3498L21.7718 8.03916C21.7714 8.03898 21.7711 8.03881 21.7707 8.03863C21.1029 7.69216 20.3513 7.49668 19.5576 7.49668H17.9214C17.0433 7.49668 16.2198 7.73586 15.5019 8.15222C15.4343 8.19065 15.3694 8.23142 15.3117 8.26767L15.3089 8.26941L15.3089 8.26938L15.3049 8.27196C13.8717 9.1992 13.0531 10.8661 13.0531 12.6019V13.289C13.0531 13.4823 13.2098 13.639 13.4031 13.639H23.8864Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                                <li>
-                                    <span>₩28,000</span>
-                                    <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.05959 5.45456C9.06376 4.45039 9.06376 2.82231 8.05959 1.81815C7.05543 0.813981 5.42735 0.813981 4.42319 1.81815C3.41902 2.82231 3.41902 4.45039 4.42319 5.45456C5.42735 6.45872 7.05543 6.45872 8.05959 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M11.4833 13.289V12.2633C11.4833 10.6954 10.7056 9.21249 9.39697 8.45293C9.33425 8.4167 9.27293 8.38325 9.20743 8.3498C8.58724 8.02786 7.89039 7.84668 7.15453 7.84668H5.51834C4.70442 7.84668 3.94068 8.06828 3.2731 8.45572C3.21178 8.49056 3.15185 8.52819 3.09193 8.56582C1.76932 9.42155 1 10.9713 1 12.6019V13.289H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M17.6847 13.639C17.878 13.639 18.0347 13.4823 18.0347 13.289L15.4088 8.3498L15.5701 8.03916C15.5698 8.03898 15.5694 8.03881 15.5691 8.03863C14.9013 7.69216 14.1497 7.49668 13.3559 7.49668H11.7198C10.8416 7.49668 10.0181 7.73586 9.30019 8.15222C9.23265 8.19065 9.16773 8.23142 9.11 8.26767L9.10722 8.26941L9.10721 8.26938L9.10322 8.27196C7.67008 9.1992 6.85142 10.8661 6.85142 12.6019V13.289C6.85142 13.4823 7.00812 13.639 7.20142 13.639H17.6847Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M20.7104 5.70204C21.8512 4.56119 21.8512 2.71151 20.7104 1.57066C19.5696 0.429814 17.7199 0.429814 16.579 1.57066C15.4382 2.71151 15.4382 4.56119 16.579 5.70204C17.7199 6.84289 19.5696 6.84289 20.7104 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.8866 13.639C24.0799 13.639 24.2366 13.4823 24.2366 13.289L21.6107 8.3498L21.772 8.03916C21.7717 8.03898 21.7713 8.03881 21.771 8.03863C21.1032 7.69216 20.3516 7.49668 19.5578 7.49668H17.9217C17.0435 7.49668 16.22 7.73586 15.5021 8.15222C15.4346 8.19065 15.3696 8.23142 15.3119 8.26767L15.3091 8.26941L15.3091 8.26938L15.3051 8.27196C13.872 9.1992 13.0533 10.8661 13.0533 12.6019V13.289C13.0533 13.4823 13.21 13.639 13.4033 13.639H23.8866Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M26.9116 5.70204C28.0524 4.56119 28.0524 2.71151 26.9116 1.57066C25.7707 0.429814 23.921 0.429814 22.7802 1.57066C21.6393 2.71151 21.6393 4.56119 22.7802 5.70204C23.921 6.84289 25.7707 6.84289 26.9116 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M30.0878 13.639C30.2811 13.639 30.4378 13.4823 30.4378 13.289L27.8119 8.3498L27.9732 8.03916C27.9728 8.03898 27.9725 8.03881 27.9722 8.03863C27.3043 7.69216 26.5528 7.49668 25.759 7.49668H24.1228C23.2447 7.49668 22.4212 7.73586 21.7033 8.15222C21.6357 8.19065 21.5708 8.23142 21.5131 8.26767L21.5103 8.26941L21.5103 8.26938L21.5063 8.27196C20.0732 9.1992 19.2545 10.8661 19.2545 12.6019V13.289C19.2545 13.4823 19.4112 13.639 19.6045 13.639H30.0878Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                            </ul>
-                            <div class="menu-option">
-                                <div class="title">
-                                    <div class="a_1">
-                                        <span>Select additional menus that can be ordered with The with with with</span>
-                                    </div>
-                                    <div class="pagination"></div>
-                                </div>
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1"><span>tteok chuga</span></p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option02.png" alt="옵션2">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Fish Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>odeng chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>tteok chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option02.png" alt="옵션2">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Fish Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>odeng chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="top-wrap">
-                                                <div class="img-wrap">
-                                                    <img src="../images/main/option01.png" alt="옵션1">
-                                                </div>
-                                                <div class="select-menu">
-                                                    <a class="minus" href="#none">
-                                                        <img src="../images/common/minus.svg" alt="">
-                                                    </a>
-                                                    <div class="value">0</div>
-                                                    <a class="plus" href="#none">
-                                                        <img src="../images/common/plus.svg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="text01">
-                                                <h5 class="a_1">
-                                                    <span>
-                                                        Add Extra Sliced Rice Cakes
-                                                    </span>
-                                                </h5>
-                                                <p class="a_1">
-                                                    <span>tteok chuga</span>
-                                                </p>
-                                                <div class="more-title">
-                                                    <span>additional side dish dish</span>
-                                                    <a href="" class="more">more</a>
-                                                </div>
-                                                <div class="price">
-                                                    +4,000
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="list_2">
-                        <h2 class="a_1" data-aos="">
-                            <span>
-                                ADD INGREDIENTS
-                            </span>
-                        </h2>
-                        <ul>
-                            <li>
-                                <div class="img-wrap">
-                                    <img src="../images/main/add_option01.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Add Extra Sliced Rice Cakes
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            tteok chuga
-                                        </span>
-                                    </p>
-                                    <div class="more-title">
-                                        <span>Additional side dish makes the the the</span>
-                                        <a href="" class="more">more</a>
-                                    </div>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-wrap">
-                                    <img src="../images/main/add_option02.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Add Extra Fish Cakes
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            odeng chuga
-                                        </span>
-                                    </p>
-                                    <div class="more-title">
-                                        <span>Additional side dish makes the the the</span>
-                                        <a href="" class="more">more</a>
-                                    </div>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-wrap">
-                                    <img src="../images/main/add_option03.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Add Extra Ramyeon
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            ramyeon sari chuga
-                                        </span>
-                                    </p>
-                                    <div class="more-title">
-                                        <span>Additional side dish makes the the the</span>
-                                        <a href="" class="more">more</a>
-                                    </div>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="list_2">
-                        <h2 class="a_1" data-aos="">
-                            <span>
-                                DRINK MENU
-                            </span>
-                        </h2>
-                        <ul>
-                            <li class="cancel_test">
-                                <div class="img-wrap">
-                                    <img src="../images/main/drink_01.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Cider
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            Saida
-                                        </span>
-                                    </p>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="warning_test">
-                                <div class="img-wrap">
-                                    <img src="../images/main/drink_02.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Coca Cola
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            Coca Cola
-                                        </span>
-                                    </p>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu_test">
-                                <div class="img-wrap">
-                                    <img src="../images/main/drink_03.png" alt="">
-                                </div>
-                                <div class="text01">
-                                    <h5 class="a_1">
-                                        <span>
-                                            Fanta Orange
-                                        </span>
-                                    </h5>
-                                    <p class="a_1">
-                                        <span>
-                                            Fanta
-                                        </span>
-                                    </p>
-                                    <div class="more-title">
-                                        <span>Additional side dish makes the the the</span>
-                                        <a href="" class="more">more</a>
-                                    </div>
-                                    <div class="price">₩4,000</div>
-                                    <div class="select-menu main_option">
-                                        <a class="minus" href="#none">
-                                            <img src="../images/common/minus.svg" alt="">
-                                        </a>
-                                        <div class="value">0</div>
-                                        <a class="plus" href="#none">
-                                            <img src="../images/common/plus.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- 
-            [팝업] 메뉴를 담지 않은 상태에서 옵션(사리)추가를 누르면 띄워 줍니다. 
-            해당 팝업에 active, class="dark-bg"에 active시 활성화
-        -->
-        <div class="popup_test">팝업1(클릭)</div>        
-    </main>
-
-    <div class="popup cancel">
-        <div class="img-wrap">
-            <img src="../images/common/popup_cancel.svg" alt="">
-        </div>
-        <p>
-            Please choose <br />
-            the main menu first
-        </p>
-        <a href="" class="close_btn">Continue Shopping</a>
+<!-- load되면 ul안에 li로 추가 됩니다. -->
+<header>
+    <div class="header-wrap">
+        <ul>
+        </ul>
     </div>
+</header>
 
-    <div class="popup menu-more">
-        <div class="wrap">
-            <div class="thumbnail">
-                <ul class="top">
-                    <li>
-                        <div class="icon">
-                            <img src="../images/common/time.svg" alt="">
-                        </div>
-                        <span>30min</span>
-                    </li>
-                    <li class="star">
-                        <div class="icon"><img src="../images/common/star.svg" alt=""></div>
-                        <span>4.8</span>
-                    </li>
-                </ul>
-                <div class="img-wrap">
-                    <img src="../images/main/popup_thumbnail.png" alt="">
+<main id="main_page">
+    <section class="header">
+        <article>
+            <div class="wrap">
+                <a href="#none" class="logo">
+                    K-PPLE
+                </a>
+                <div class="toggle">
+                    <a href="javascript:alert('준비중')" class="active">Stay</a>
+                    <a href="javascript:alert('준비중')">To Go</a>
+                    <div class="toggle_bg left"></div>
                 </div>
-                <ul class="icon-wrap">
-                    <li>
-                        <img src="../images/common/popup_icon01.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="../images/common/popup_icon02.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="../images/common/popup_icon03.svg" alt="">
-                    </li>
-                </ul>
             </div>
-            <div class="info">
-                <div class="text">
-                    <h3 class="a_1">
-                        <span>
-                            Original Sindangdong Tteokbokki
-                        </span>
-                    </h3>
-                    <p class="sub-title">신당동떡볶이 <a href=""><img src="../images/common/speak.svg" alt="speak"></a></p>
-                    <div class="more-title">
-                        <p class="more-wrap">
-                            <span class="txt">
-                                Sindangdong tteokbokki is I Love Sindangdong’s
-                                signature tteokbokki with 40 years of hist years of hist years of hist years of hist
+        </article>
+    </section>
+    <section class="s01">
+        <article>
+            <div class="wrap">
+                <div class="main-imgae">
+                    <img src="../images/main/main01.jpg" alt="img01">
+                </div>
+                <div class="main-title-box">
+                    <div class="left">
+                        <h1 class="a_1">
+                            <span>
+                                I LOVE SINDANGDONGI
                             </span>
-                            <a href="" class="more"><span>...</span> more</a>
+                        </h1>
+                        <p class="a_1">
+                            <span>
+                                아이러브신당동
+                            </span>
                         </p>
                     </div>
+                    <div class="right">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.44444 14.2663L4.22578 17L5.22222 11.211L1 7.112L6.83434 6.26629L9.44444 1L12.0545 6.26629L17.8889 7.112L13.6667 11.211L14.6631 17L9.44444 14.2663Z" fill="#FFB930" stroke="#FFB930" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>4.8</span>
+                    </div>
                 </div>
-                <div class="box">
+            </div>
+        </article>
+    </section>
+    <section class="s02">
+        <article>
+            <div class="wrap">
+                <h2 class="a_1" data-aos="">
+                    <span>
+                        TTEOKBOKKI MENU
+                    </span>
+                </h2>
+                <div class="list_1">
+                    <div class="top-wrap">
+                        <div class="icon-wrap">
+                            <ul class="top">
+                                <li>
+                                    <img src="../images/common/icon_like.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="../images/common/icon_set.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="../images/common/icon_new.svg" alt="">
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="infor">
+                                    <li><img src="../images/common/spicy.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="select-menu main_option">
+                                <a class="minus" href="#none">
+                                    <img src="../images/common/minus.svg" alt="">
+                                </a>
+                                <div class="value">0</div>
+                                <a class="plus" href="#none">
+                                    <img src="../images/common/plus.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="../images/main/tteokbokki01.png" alt="떡볶이">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="a_1">
+                            <span>
+                                Original Sindangdong Tteokbokki
+                            </span>
+                        </h4>
+                        <p class="a_1">
+                            <span>
+                                Sindangdong Tteokbokki
+                            </span>
+                        </p>
+                        <div class="more-title">
+                            <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
+                            <a href="#none" class="more">more</a>
+                        </div>
+                        <ul class="person_tab">
+                            <li class="active">
+                                <span>₩17,000</span>
+                                <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.30708 5.70204C9.44793 4.56119 9.44793 2.71151 8.30708 1.57066C7.16623 0.429814 5.31655 0.429814 4.1757 1.57066C3.03485 2.71151 3.03485 4.56119 4.1757 5.70204C5.31655 6.84289 7.16623 6.84289 8.30708 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4833 13.639C11.6766 13.639 11.8333 13.4823 11.8333 13.289L9.20743 8.3498L9.36868 8.03916C9.36834 8.03898 9.368 8.03881 9.36766 8.03863C8.69984 7.69216 7.94826 7.49668 7.15453 7.49668H5.51834C4.64021 7.49668 3.81669 7.73586 3.09878 8.15222C3.03124 8.19065 2.96631 8.23142 2.90859 8.26767L2.90581 8.26941L2.90579 8.26938L2.9018 8.27196C1.46866 9.1992 0.65 10.8661 0.65 12.6019V13.289C0.65 13.4823 0.8067 13.639 1 13.639H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.6845 13.639C17.8778 13.639 18.0345 13.4823 18.0345 13.289L15.4086 8.3498L15.5699 8.03916C15.5695 8.03898 15.5692 8.03881 15.5688 8.03863C14.901 7.69216 14.1494 7.49668 13.3557 7.49668H11.7195C10.8414 7.49668 10.0179 7.73586 9.29995 8.15222C9.23241 8.19065 9.16749 8.23142 9.10976 8.26767L9.10698 8.26941L9.10696 8.26938L9.10297 8.27196C7.66983 9.1992 6.85117 10.8661 6.85117 12.6019V13.289C6.85117 13.4823 7.00787 13.639 7.20117 13.639H17.6845Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <li>
+                                <span>₩23,000</span>
+                                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.05935 5.45456C9.06352 4.45039 9.06352 2.82231 8.05935 1.81815C7.05518 0.813981 5.42711 0.813981 4.42294 1.81815C3.41877 2.82231 3.41877 4.45039 4.42294 5.45456C5.42711 6.45872 7.05518 6.45872 8.05935 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4831 13.289V12.2633C11.4831 10.6954 10.7054 9.21249 9.39673 8.45293C9.33401 8.4167 9.27269 8.38325 9.20718 8.3498C8.58699 8.02786 7.89015 7.84668 7.15428 7.84668H5.51809C4.70418 7.84668 3.94044 8.06828 3.27286 8.45572C3.21154 8.49056 3.15161 8.52819 3.09168 8.56582C1.76907 9.42155 0.999756 10.9713 0.999756 12.6019V13.289H11.4831Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5085 5.70204C15.6493 4.56119 15.6493 2.71151 14.5085 1.57066C13.3676 0.429814 11.518 0.429814 10.3771 1.57066C9.23627 2.71151 9.23627 4.56119 10.3771 5.70204C11.518 6.84289 13.3676 6.84289 14.5085 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.685 13.639C17.8783 13.639 18.035 13.4823 18.035 13.289L15.4091 8.3498L15.5703 8.03916C15.57 8.03898 15.5697 8.03881 15.5693 8.03863C14.9015 7.69216 14.1499 7.49668 13.3562 7.49668H11.72C10.8419 7.49668 10.0184 7.73586 9.30044 8.15222C9.2329 8.19065 9.16797 8.23142 9.11025 8.26767L9.10747 8.26941L9.10745 8.26938L9.10346 8.27196C7.67032 9.1992 6.85166 10.8661 6.85166 12.6019V13.289C6.85166 13.4823 7.00836 13.639 7.20166 13.639H17.685Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.7102 5.70204C21.851 4.56119 21.851 2.71151 20.7102 1.57066C19.5693 0.429814 17.7196 0.429814 16.5788 1.57066C15.4379 2.71151 15.4379 4.56119 16.5788 5.70204C17.7196 6.84289 19.5693 6.84289 20.7102 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.8864 13.639C24.0797 13.639 24.2364 13.4823 24.2364 13.289L21.6105 8.3498L21.7718 8.03916C21.7714 8.03898 21.7711 8.03881 21.7707 8.03863C21.1029 7.69216 20.3513 7.49668 19.5576 7.49668H17.9214C17.0433 7.49668 16.2198 7.73586 15.5019 8.15222C15.4343 8.19065 15.3694 8.23142 15.3117 8.26767L15.3089 8.26941L15.3089 8.26938L15.3049 8.27196C13.8717 9.1992 13.0531 10.8661 13.0531 12.6019V13.289C13.0531 13.4823 13.2098 13.639 13.4031 13.639H23.8864Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <li>
+                                <span>₩28,000</span>
+                                <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.05959 5.45456C9.06376 4.45039 9.06376 2.82231 8.05959 1.81815C7.05543 0.813981 5.42735 0.813981 4.42319 1.81815C3.41902 2.82231 3.41902 4.45039 4.42319 5.45456C5.42735 6.45872 7.05543 6.45872 8.05959 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4833 13.289V12.2633C11.4833 10.6954 10.7056 9.21249 9.39697 8.45293C9.33425 8.4167 9.27293 8.38325 9.20743 8.3498C8.58724 8.02786 7.89039 7.84668 7.15453 7.84668H5.51834C4.70442 7.84668 3.94068 8.06828 3.2731 8.45572C3.21178 8.49056 3.15185 8.52819 3.09193 8.56582C1.76932 9.42155 1 10.9713 1 12.6019V13.289H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.6847 13.639C17.878 13.639 18.0347 13.4823 18.0347 13.289L15.4088 8.3498L15.5701 8.03916C15.5698 8.03898 15.5694 8.03881 15.5691 8.03863C14.9013 7.69216 14.1497 7.49668 13.3559 7.49668H11.7198C10.8416 7.49668 10.0181 7.73586 9.30019 8.15222C9.23265 8.19065 9.16773 8.23142 9.11 8.26767L9.10722 8.26941L9.10721 8.26938L9.10322 8.27196C7.67008 9.1992 6.85142 10.8661 6.85142 12.6019V13.289C6.85142 13.4823 7.00812 13.639 7.20142 13.639H17.6847Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.7104 5.70204C21.8512 4.56119 21.8512 2.71151 20.7104 1.57066C19.5696 0.429814 17.7199 0.429814 16.579 1.57066C15.4382 2.71151 15.4382 4.56119 16.579 5.70204C17.7199 6.84289 19.5696 6.84289 20.7104 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.8866 13.639C24.0799 13.639 24.2366 13.4823 24.2366 13.289L21.6107 8.3498L21.772 8.03916C21.7717 8.03898 21.7713 8.03881 21.771 8.03863C21.1032 7.69216 20.3516 7.49668 19.5578 7.49668H17.9217C17.0435 7.49668 16.22 7.73586 15.5021 8.15222C15.4346 8.19065 15.3696 8.23142 15.3119 8.26767L15.3091 8.26941L15.3091 8.26938L15.3051 8.27196C13.872 9.1992 13.0533 10.8661 13.0533 12.6019V13.289C13.0533 13.4823 13.21 13.639 13.4033 13.639H23.8866Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M26.9116 5.70204C28.0524 4.56119 28.0524 2.71151 26.9116 1.57066C25.7707 0.429814 23.921 0.429814 22.7802 1.57066C21.6393 2.71151 21.6393 4.56119 22.7802 5.70204C23.921 6.84289 25.7707 6.84289 26.9116 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M30.0878 13.639C30.2811 13.639 30.4378 13.4823 30.4378 13.289L27.8119 8.3498L27.9732 8.03916C27.9728 8.03898 27.9725 8.03881 27.9722 8.03863C27.3043 7.69216 26.5528 7.49668 25.759 7.49668H24.1228C23.2447 7.49668 22.4212 7.73586 21.7033 8.15222C21.6357 8.19065 21.5708 8.23142 21.5131 8.26767L21.5103 8.26941L21.5103 8.26938L21.5063 8.27196C20.0732 9.1992 19.2545 10.8661 19.2545 12.6019V13.289C19.2545 13.4823 19.4112 13.639 19.6045 13.639H30.0878Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <div class="menu-option">
+                            <div class="title">
+                                <div class="a_1">
+                                    <span>Select additional menus that can be ordered with The with that can be ordered with The with</span>
+                                </div>
+                                <div class="pagination"></div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_!">tteok chuga</p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option02.png" alt="옵션2">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Fish Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_!">odeng chuga</p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>tteok chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option02.png" alt="옵션2">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Fish Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>odeng chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>tteok chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_1">
+                    <div class="top-wrap">
+                        <div class="icon-wrap">
+                            <ul class="top">
+                                <li>
+                                    <img src="../images/common/icon_like.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="../images/common/icon_set.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="../images/common/icon_new.svg" alt="">
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="infor">
+                                    <li><img src="../images/common/spicy.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="select-menu main_option">
+                                <a class="minus" href="#none">
+                                    <img src="../images/common/minus.svg" alt="">
+                                </a>
+                                <div class="value">0</div>
+                                <a class="plus" href="#none">
+                                    <img src="../images/common/plus.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="../images/main/tteokbokki01.png" alt="떡볶이">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="a_1">
+                            <span>
+                                Original Sindangdong Tteokbokki
+                            </span>
+                        </h4>
+                        <p class="a_1">
+                            <span>
+                                Sindangdong Tteokbokki
+                            </span>
+                        </p>
+                        <div class="more-title">
+                            <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
+                            <a href="#none" class="more">more</a>
+                        </div>
+                        <ul class="person_tab">
+                            <li class="active">
+                                <span>₩17,000</span>
+                                <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.30708 5.70204C9.44793 4.56119 9.44793 2.71151 8.30708 1.57066C7.16623 0.429814 5.31655 0.429814 4.1757 1.57066C3.03485 2.71151 3.03485 4.56119 4.1757 5.70204C5.31655 6.84289 7.16623 6.84289 8.30708 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4833 13.639C11.6766 13.639 11.8333 13.4823 11.8333 13.289L9.20743 8.3498L9.36868 8.03916C9.36834 8.03898 9.368 8.03881 9.36766 8.03863C8.69984 7.69216 7.94826 7.49668 7.15453 7.49668H5.51834C4.64021 7.49668 3.81669 7.73586 3.09878 8.15222C3.03124 8.19065 2.96631 8.23142 2.90859 8.26767L2.90581 8.26941L2.90579 8.26938L2.9018 8.27196C1.46866 9.1992 0.65 10.8661 0.65 12.6019V13.289C0.65 13.4823 0.8067 13.639 1 13.639H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.6845 13.639C17.8778 13.639 18.0345 13.4823 18.0345 13.289L15.4086 8.3498L15.5699 8.03916C15.5695 8.03898 15.5692 8.03881 15.5688 8.03863C14.901 7.69216 14.1494 7.49668 13.3557 7.49668H11.7195C10.8414 7.49668 10.0179 7.73586 9.29995 8.15222C9.23241 8.19065 9.16749 8.23142 9.10976 8.26767L9.10698 8.26941L9.10696 8.26938L9.10297 8.27196C7.66983 9.1992 6.85117 10.8661 6.85117 12.6019V13.289C6.85117 13.4823 7.00787 13.639 7.20117 13.639H17.6845Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <li>
+                                <span>₩23,000</span>
+                                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.05935 5.45456C9.06352 4.45039 9.06352 2.82231 8.05935 1.81815C7.05518 0.813981 5.42711 0.813981 4.42294 1.81815C3.41877 2.82231 3.41877 4.45039 4.42294 5.45456C5.42711 6.45872 7.05518 6.45872 8.05935 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4831 13.289V12.2633C11.4831 10.6954 10.7054 9.21249 9.39673 8.45293C9.33401 8.4167 9.27269 8.38325 9.20718 8.3498C8.58699 8.02786 7.89015 7.84668 7.15428 7.84668H5.51809C4.70418 7.84668 3.94044 8.06828 3.27286 8.45572C3.21154 8.49056 3.15161 8.52819 3.09168 8.56582C1.76907 9.42155 0.999756 10.9713 0.999756 12.6019V13.289H11.4831Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5085 5.70204C15.6493 4.56119 15.6493 2.71151 14.5085 1.57066C13.3676 0.429814 11.518 0.429814 10.3771 1.57066C9.23627 2.71151 9.23627 4.56119 10.3771 5.70204C11.518 6.84289 13.3676 6.84289 14.5085 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.685 13.639C17.8783 13.639 18.035 13.4823 18.035 13.289L15.4091 8.3498L15.5703 8.03916C15.57 8.03898 15.5697 8.03881 15.5693 8.03863C14.9015 7.69216 14.1499 7.49668 13.3562 7.49668H11.72C10.8419 7.49668 10.0184 7.73586 9.30044 8.15222C9.2329 8.19065 9.16797 8.23142 9.11025 8.26767L9.10747 8.26941L9.10745 8.26938L9.10346 8.27196C7.67032 9.1992 6.85166 10.8661 6.85166 12.6019V13.289C6.85166 13.4823 7.00836 13.639 7.20166 13.639H17.685Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.7102 5.70204C21.851 4.56119 21.851 2.71151 20.7102 1.57066C19.5693 0.429814 17.7196 0.429814 16.5788 1.57066C15.4379 2.71151 15.4379 4.56119 16.5788 5.70204C17.7196 6.84289 19.5693 6.84289 20.7102 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.8864 13.639C24.0797 13.639 24.2364 13.4823 24.2364 13.289L21.6105 8.3498L21.7718 8.03916C21.7714 8.03898 21.7711 8.03881 21.7707 8.03863C21.1029 7.69216 20.3513 7.49668 19.5576 7.49668H17.9214C17.0433 7.49668 16.2198 7.73586 15.5019 8.15222C15.4343 8.19065 15.3694 8.23142 15.3117 8.26767L15.3089 8.26941L15.3089 8.26938L15.3049 8.27196C13.8717 9.1992 13.0531 10.8661 13.0531 12.6019V13.289C13.0531 13.4823 13.2098 13.639 13.4031 13.639H23.8864Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <li>
+                                <span>₩28,000</span>
+                                <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.05959 5.45456C9.06376 4.45039 9.06376 2.82231 8.05959 1.81815C7.05543 0.813981 5.42735 0.813981 4.42319 1.81815C3.41902 2.82231 3.41902 4.45039 4.42319 5.45456C5.42735 6.45872 7.05543 6.45872 8.05959 5.45456Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.4833 13.289V12.2633C11.4833 10.6954 10.7056 9.21249 9.39697 8.45293C9.33425 8.4167 9.27293 8.38325 9.20743 8.3498C8.58724 8.02786 7.89039 7.84668 7.15453 7.84668H5.51834C4.70442 7.84668 3.94068 8.06828 3.2731 8.45572C3.21178 8.49056 3.15185 8.52819 3.09193 8.56582C1.76932 9.42155 1 10.9713 1 12.6019V13.289H11.4833Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5083 5.70204C15.6491 4.56119 15.6491 2.71151 14.5083 1.57066C13.3674 0.429814 11.5177 0.429814 10.3769 1.57066C9.23602 2.71151 9.23602 4.56119 10.3769 5.70204C11.5177 6.84289 13.3674 6.84289 14.5083 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.6847 13.639C17.878 13.639 18.0347 13.4823 18.0347 13.289L15.4088 8.3498L15.5701 8.03916C15.5698 8.03898 15.5694 8.03881 15.5691 8.03863C14.9013 7.69216 14.1497 7.49668 13.3559 7.49668H11.7198C10.8416 7.49668 10.0181 7.73586 9.30019 8.15222C9.23265 8.19065 9.16773 8.23142 9.11 8.26767L9.10722 8.26941L9.10721 8.26938L9.10322 8.27196C7.67008 9.1992 6.85142 10.8661 6.85142 12.6019V13.289C6.85142 13.4823 7.00812 13.639 7.20142 13.639H17.6847Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.7104 5.70204C21.8512 4.56119 21.8512 2.71151 20.7104 1.57066C19.5696 0.429814 17.7199 0.429814 16.579 1.57066C15.4382 2.71151 15.4382 4.56119 16.579 5.70204C17.7199 6.84289 19.5696 6.84289 20.7104 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.8866 13.639C24.0799 13.639 24.2366 13.4823 24.2366 13.289L21.6107 8.3498L21.772 8.03916C21.7717 8.03898 21.7713 8.03881 21.771 8.03863C21.1032 7.69216 20.3516 7.49668 19.5578 7.49668H17.9217C17.0435 7.49668 16.22 7.73586 15.5021 8.15222C15.4346 8.19065 15.3696 8.23142 15.3119 8.26767L15.3091 8.26941L15.3091 8.26938L15.3051 8.27196C13.872 9.1992 13.0533 10.8661 13.0533 12.6019V13.289C13.0533 13.4823 13.21 13.639 13.4033 13.639H23.8866Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M26.9116 5.70204C28.0524 4.56119 28.0524 2.71151 26.9116 1.57066C25.7707 0.429814 23.921 0.429814 22.7802 1.57066C21.6393 2.71151 21.6393 4.56119 22.7802 5.70204C23.921 6.84289 25.7707 6.84289 26.9116 5.70204Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M30.0878 13.639C30.2811 13.639 30.4378 13.4823 30.4378 13.289L27.8119 8.3498L27.9732 8.03916C27.9728 8.03898 27.9725 8.03881 27.9722 8.03863C27.3043 7.69216 26.5528 7.49668 25.759 7.49668H24.1228C23.2447 7.49668 22.4212 7.73586 21.7033 8.15222C21.6357 8.19065 21.5708 8.23142 21.5131 8.26767L21.5103 8.26941L21.5103 8.26938L21.5063 8.27196C20.0732 9.1992 19.2545 10.8661 19.2545 12.6019V13.289C19.2545 13.4823 19.4112 13.639 19.6045 13.639H30.0878Z" fill="#D0D0D0" stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <div class="menu-option">
+                            <div class="title">
+                                <div class="a_1">
+                                    <span>Select additional menus that can be ordered with The with with with</span>
+                                </div>
+                                <div class="pagination"></div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1"><span>tteok chuga</span></p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option02.png" alt="옵션2">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Fish Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>odeng chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>tteok chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option02.png" alt="옵션2">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Fish Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>odeng chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-wrap">
+                                            <div class="img-wrap">
+                                                <img src="../images/main/option01.png" alt="옵션1">
+                                            </div>
+                                            <div class="select-menu">
+                                                <a class="minus" href="#none">
+                                                    <img src="../images/common/minus.svg" alt="">
+                                                </a>
+                                                <div class="value">0</div>
+                                                <a class="plus" href="#none">
+                                                    <img src="../images/common/plus.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text01">
+                                            <h5 class="a_1">
+                                                <span>
+                                                    Add Extra Sliced Rice Cakes
+                                                </span>
+                                            </h5>
+                                            <p class="a_1">
+                                                <span>tteok chuga</span>
+                                            </p>
+                                            <div class="more-title">
+                                                <span>additional side dish dish</span>
+                                                <a href="" class="more">more</a>
+                                            </div>
+                                            <div class="price">
+                                                +4,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list_2">
+                    <h2 class="a_1" data-aos="">
+                        <span>
+                            ADD INGREDIENTS
+                        </span>
+                    </h2>
                     <ul>
                         <li>
-                            <p>Main Ingredients</p>
-                            <span>
-                                Rice cake sticks, odeng(fish cakes), <br />
-                                various Vegetables, ramyeon(instant noodle)
-                            </span>
-                        </li>
-                        <li>
-                            <p>How To Cook</p>
-                            <span>
-                                Boil the soup and stir well for 5 minutes.
-                            </span>
-                        </li>
-                        <li>
-                            <p>How To Eat</p>
-                            <span>
-                                Eat little by little in a small bowl.
-                            </span>
-                        </li>
-                        <li>
-                            <p>Side Dish</p>
-                            <span>
-                                <a href="#none" class="slide-menu">Kimchi</a> and pickled radish are served.
-                            </span>
-                            <div class="slide">
-                                <div class="img-wrap">
-                                    <img src="../images/main/kimchi.png" alt="">
+                            <div class="img-wrap">
+                                <img src="../images/main/add_option01.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Add Extra Sliced Rice Cakes
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        tteok chuga
+                                    </span>
+                                </p>
+                                <div class="more-title">
+                                    <span>Additional side dish makes the the the</span>
+                                    <a href="" class="more">more</a>
                                 </div>
-                                <span>
-                                    For kimchi, salted cabbage is red pepper powder,
-                                    It is a traditional Korean food made by fermenting green
-                                    onions, garlic, radishes, ginger, and salted shrimp.
-                                </span>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <img src="../images/main/add_option02.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Add Extra Fish Cakes
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        odeng chuga
+                                    </span>
+                                </p>
+                                <div class="more-title">
+                                    <span>Additional side dish makes the the the</span>
+                                    <a href="" class="more">more</a>
+                                </div>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <img src="../images/main/add_option03.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Add Extra Ramyeon
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        ramyeon sari chuga
+                                    </span>
+                                </p>
+                                <div class="more-title">
+                                    <span>Additional side dish makes the the the</span>
+                                    <a href="" class="more">more</a>
+                                </div>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <a href="#none" class="close_btn"><img src="../images/common/popmenu_close.svg" alt=""></a>
+                <div class="list_2">
+                    <h2 class="a_1" data-aos="">
+                        <span>
+                            DRINK MENU
+                        </span>
+                    </h2>
+                    <ul>
+                        <li class="cancel_test">
+                            <div class="img-wrap">
+                                <img src="../images/main/drink_01.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Cider
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        Saida
+                                    </span>
+                                </p>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="warning_test">
+                            <div class="img-wrap">
+                                <img src="../images/main/drink_02.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Coca Cola
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        Coca Cola
+                                    </span>
+                                </p>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_test">
+                            <div class="img-wrap">
+                                <img src="../images/main/drink_03.png" alt="">
+                            </div>
+                            <div class="text01">
+                                <h5 class="a_1">
+                                    <span>
+                                        Fanta Orange
+                                    </span>
+                                </h5>
+                                <p class="a_1">
+                                    <span>
+                                        Fanta
+                                    </span>
+                                </p>
+                                <div class="more-title">
+                                    <span>Additional side dish makes the the the</span>
+                                    <a href="" class="more">more</a>
+                                </div>
+                                <div class="price">₩4,000</div>
+                                <div class="select-menu main_option">
+                                    <a class="minus" href="#none">
+                                        <img src="../images/common/minus.svg" alt="">
+                                    </a>
+                                    <div class="value">0</div>
+                                    <a class="plus" href="#none">
+                                        <img src="../images/common/plus.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <footer>
-        <div class="footer-wrap">
-            <ul>
+    <!-- 
+            [팝업] 메뉴를 담지 않은 상태에서 옵션(사리)추가를 누르면 띄워 줍니다. 
+            해당 팝업에 active, class="dark-bg"에 active시 활성화
+        -->
+    <div class="popup_test">팝업1(클릭)</div>
+</main>
+
+<div class="popup cancel">
+    <div class="img-wrap">
+        <img src="../images/common/popup_cancel.svg" alt="">
+    </div>
+    <p>
+        Please choose <br />
+        the main menu first
+    </p>
+    <a href="" class="close_btn">Continue Shopping</a>
+</div>
+
+<div class="popup menu-more">
+    <div class="wrap">
+        <div class="thumbnail">
+            <div class="line1"></div>
+            <ul class="top">
                 <li>
-                    <a href="../language/index.html" class="language">
-                        <div class="icon-wrap"><img src="../images/language/lang02.svg" alt="LANGUAGE"></div>
-                        <p>LANGUAGE</p>
-                    </a>
+                    <div class="icon">
+                        <img src="../images/common/time.svg" alt="">
+                    </div>
+                    <span>30min</span>
+                </li>
+                <li class="star">
+                    <div class="icon"><img src="../images/common/star.svg" alt=""></div>
+                    <span>4.8</span>
+                </li>
+            </ul>
+            <div class="img-wrap">
+                <img src="../images/main/popup_thumbnail.png" alt="">
+            </div>
+            <ul class="icon-wrap">
+                <li>
+                    <img src="../images/common/popup_icon01.svg" alt="">
                 </li>
                 <li>
-                    <a href="#none" class="restaurant">
-                        <div class="icon-wrap"><img src="../images/common/icon_restaurant.svg" alt="RESTAURANT"></div>
-                        <p>RESTAURANT</p>
-                    </a>
+                    <img src="../images/common/popup_icon02.svg" alt="">
                 </li>
                 <li>
-                    <a href="#none" class="top">
-                        <div class="icon-wrap"><img src="../images/common/icon_top.svg" alt="top"></div>
-                        <p>TOP</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../order/index.html" class="order">
-                        <div class="icon-wrap">
-                            <img src="../images/common/order.svg" alt="order">
-                            <span class="total_value">0</span>
-                        </div>
-                        <p>ORDER</p>
-                    </a>
+                    <img src="../images/common/popup_icon03.svg" alt="">
                 </li>
             </ul>
         </div>
-    </footer>
+        <div class="info">
+            <div class="text">
+                <h3 class="a_1">
+                    <span>
+                        Original Sindangdong Tteokbokki
+                    </span>
+                </h3>
+                <p class="sub-title">
+                    신당동떡볶이
+                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="active">
+                        <path d="M12.8782 4.09293C13.1236 3.84757 13.5269 3.86198 13.7527 4.12541C14.8046 5.35121 15.3589 6.74323 15.3623 8.18396C15.3623 8.18862 15.3623 8.19349 15.3623 8.19816C15.3623 9.63645 14.8131 11.024 13.7669 12.2451C13.5411 12.5088 13.1378 12.5232 12.8922 12.2778C12.6724 12.058 12.6576 11.7055 12.8598 11.4693C13.7182 10.4665 14.1686 9.34502 14.1686 8.19796C14.1686 8.19431 14.1686 8.19065 14.1686 8.187C14.1657 7.03669 13.7103 5.91013 12.8458 4.90188C12.6434 4.66545 12.6582 4.31273 12.8782 4.09293Z" fill="#5A5A5A" />
+                        <path d="M15.4255 13.6112C18.449 10.2662 18.449 6.10514 15.4255 2.76016C15.212 2.52393 15.2197 2.16207 15.4449 1.9368C15.686 1.6957 16.0804 1.70463 16.3091 1.9573C17.999 3.82421 18.8884 5.96592 18.8884 8.18556C18.8884 10.4052 17.999 12.5471 16.3091 14.4138C16.0804 14.6665 15.686 14.6754 15.4449 14.4343C15.2199 14.2093 15.212 13.8474 15.4255 13.6112Z" fill="#5A5A5A" />
+                        <path d="M11.3194 0.931007V15.0684C11.3194 15.3494 11.1983 15.6206 10.9787 15.7965C10.8106 15.9313 10.6083 16.0001 10.4039 16.0001C10.2771 16.0001 10.1492 15.9735 10.0291 15.9197L4.42365 12.2324H0.915904C0.409955 12.2322 0 11.822 0 11.3163V5.21219C0 4.70645 0.409955 4.29629 0.915904 4.29629H4.3993L9.97549 0.107242C10.2736 -0.0504481 10.6268 -0.0338064 10.9107 0.154326C11.1694 0.325614 11.3194 0.620294 11.3194 0.931007Z" fill="#5A5A5A" />
+                    </svg>
+                </p>
+                <div class="more-title">
+                    <!-- <span class="txt">
+                        Sindangdong tteokbokki is I Love Sindangdong’s
+                        signature tteokbokki with 40 years of hist years of hist years of hist years of hist
+                    </span> -->
+                    <p class="more-wrap">
+                        <span class="txt">
+                            Sindangdong tteokbokki is I Love Sindangdong’s
+                            signature tteokbokki with 40 years of hist years of hist years of hist years of hist
+                        </span>
+                        <a href="" class="more"><span>...</span> more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>
+                        <p>Main Ingredients</p>
+                        <span>
+                            Rice cake sticks, odeng(fish cakes), <br />
+                            various Vegetables, ramyeon(instant noodle)
+                        </span>
+                    </li>
+                    <li>
+                        <p>How To Cook</p>
+                        <span>
+                            Boil the soup and stir well for 5 minutes.
+                        </span>
+                    </li>
+                    <li>
+                        <p>How To Eat</p>
+                        <span>
+                            Eat little by little in a small bowl.
+                        </span>
+                    </li>
+                    <li>
+                        <p>Side Dish</p>
+                        <span>
+                            <a href="#none" class="slide-menu">Kimchi</a> and pickled radish are served.
+                        </span>
+                        <div class="slide">
+                            <div class="img-wrap">
+                                <img src="../images/main/kimchi.png" alt="">
+                            </div>
+                            <span>
+                                For kimchi, salted cabbage is red pepper powder,
+                                It is a traditional Korean food made by fermenting green
+                                onions, garlic, radishes, ginger, and salted shrimp.
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#none" class="close_btn"><img src="../images/common/popmenu_close.svg" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-wrap">
+        <ul>
+            <li>
+                <a href="../language/index.html" class="language">
+                    <div class="icon-wrap"><img src="../images/language/lang02.svg" alt="LANGUAGE"></div>
+                    <p>LANGUAGE</p>
+                </a>
+            </li>
+            <li>
+                <a href="#none" class="restaurant">
+                    <div class="icon-wrap"><img src="../images/common/icon_restaurant.svg" alt="RESTAURANT"></div>
+                    <p>RESTAURANT</p>
+                </a>
+            </li>
+            <li>
+                <a href="#none" class="top">
+                    <div class="icon-wrap"><img src="../images/common/icon_top.svg" alt="top"></div>
+                    <p>TOP</p>
+                </a>
+            </li>
+            <li>
+                <a href="../order/index.html" class="order">
+                    <div class="icon-wrap">
+                        <img src="../images/common/order.svg" alt="order">
+                        <span class="total_value">0</span>
+                    </div>
+                    <p>ORDER</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
 <?php
-    include_once "../include/footer.html";
+include_once "../include/footer.html";
 ?>
+
+<script>
+    document.querySelector(".popup.menu-more").addEventListener("dragstart", function(e) {
+        console.log(e)
+    });
+    document.querySelector(".popup.menu-more").addEventListener("dragend", function(e){
+        console.log(e)
+    });
+</script>

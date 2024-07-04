@@ -88,6 +88,12 @@ footer{
                             }
                         }
                     }
+                    &.language{
+                        .icon-wrap{
+                            border: 1px solid #ddd;
+                            border-radius: 50%;
+                        }
+                    }
                     &.order{
                         padding-top: 30px;
                         position: relative;
@@ -125,4 +131,20 @@ footer{
 
 header,footer{
     max-width: 500px;
+}
+
+.dark-bg{
+    max-width: 500px;
+    position: fixed;
+    @include pos-center;
+    z-index: 90;
+    @include fullsize;
+    background-color: #000;
+    @include el-hide;
+    @include drag-off;
+    &.active{
+        @include drag-on;
+        @include el-fade;
+        opacity: .8;
+    }
 }

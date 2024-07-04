@@ -20,10 +20,15 @@ if(url == "main" || url == "order"){
             if (el.querySelector("span").getBoundingClientRect().width >= el.getBoundingClientRect().width) {
                 let clone = document.createElement("span");
                 clone.textContent = el.querySelector("span").textContent;
+                clone.classList.add("clone");
                 el.appendChild(clone);
                 el.classList.add("move");
             }
         });
+    });
+    document.querySelector(".dark-bg").addEventListener("click",function(e){
+        document.querySelector(".popup.active").classList.remove("active");
+        document.querySelector(".dark-bg").classList.remove("active");
     })
 }
 
@@ -74,7 +79,7 @@ if (url == "main") {
         });
 
         window.addEventListener("scroll", function (e) {
-            if (window.scrollY > 0) {
+            if (window.scrollY > document.querySelector(".s01").getBoundingClientRect().height - header.getBoundingClientRect().height) {
                 header.classList.add("active");
             } else {
                 header.classList.remove("active");
@@ -215,8 +220,22 @@ if (url == "main") {
                 });
             }
         });
+
+        document.querySelector(".order").addEventListener("click",function(e){
+            if(total <= 0){
+                e.preventDefault();
+                alert("Please select one or more menus.");
+            }
+        });
     });
     let pop_more_btn = document.querySelector(".popup.menu-more .more");
+    // console.log(document.querySelector(".more-wrap span.txt").getBoundingClientRect().height)
+    // if(document.querySelector(".more-wrap span.txt").getBoundingClientRect().height <= 38){
+    //     pop_more_btn.classList.add("hide");
+    //     document.querySelector(".more-wrap span.txt").classList.add("not_clamp");
+    // }else{
+    //     document.querySelector(".more-wrap span.txt").classList.add("clamp");
+    // }
 
     pop_more_btn.addEventListener("click", function (e) {
         e.preventDefault();
@@ -256,4 +275,5 @@ if (url == "order") {
     });
 
 }
+
 
