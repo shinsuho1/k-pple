@@ -5,7 +5,6 @@
 @import "./function";
 @import "./swiper";
 
-$innerWidth: 1300px;
 @import "./gnb";
 
 main {
@@ -148,7 +147,7 @@ main {
                                     font-size: 22px;
                                     font-weight: bold;
                                     color: #000;
-                                    margin-bottom: 3px;
+                                    margin-bottom: 5px;
                                 }
 
                                 p {
@@ -204,47 +203,52 @@ main {
         &.order{
             section{
                 &.s01{
+                    &::before{
+                        content: "";
+                        position: fixed;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                        opacity: 1;
+                        @include transition(1s 1s);
+                        z-index: 4;
+                    }
                     article{
                         .wrap{
                             position: relative;
-                            .video{
+                            .video-box{
                                 position: absolute;
-                                width: 100%;
-                                background-color: #Fff;
-                                @include flex-center;
                                 z-index: 5;
-                                max-width: 400px;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%,-50%);
+                                width: 100%;
+                                max-width: 500px;
                                 @include transition(1s);
-                                img{
-                                    width: 100%;
-                                    aspect-ratio: 131/77;    
-                                    object-fit: cover;
-                                    position: relative;
-                                    z-index: 2;
-                                }
-                                &::before{
-                                    content: "";
+                                height: 100vh;
+                                top: 0;
+                                @include drag-off;
+                                >*{
                                     position: absolute;
-                                    top: 0;
-                                    left: 50%;
-                                    transform: translateX(-50%);
                                     width: 100%;
-                                    height: 100vh;
-                                    background-color: #fff;
-                                    opacity: 1;
+                                    aspect-ratio: 16/9;
+                                    object-fit: cover;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);    
                                     @include transition(1s);
-                                    z-index: 1;
+                                    @include drag-on;
                                 }
+                            }
+                            &:before{
+                                content: "";
+                                width: 100%;
+                                aspect-ratio: 16/9;
+                                display: block;
                             }
                             .box{
                                 width: 100%;
                                 padding: 10px;
-                                padding-top: 245px;
-                                opacity: 0;
-                                @include transition(1s);
                                 .center{
                                     width: 100%;
                                     padding: 10px;
@@ -319,63 +323,68 @@ main {
                                     font-size: 22px;
                                     font-weight: bold;
                                     text-align: center;
-                                    margin: 50px 0;
-                                }
-                                .bottom{
-                                    @include flex-center;
-                                    padding: 0 10px;
-                                    gap: 20px;
-                                    .swiper{
-                                        width: calc(100% - 20px - 60px);
-                                        aspect-ratio: 273/60;
-                                        .swiper-wrapper{
-                                            @include fullsize;
-                                            .swiper-slide{
-                                                @include fullsize;
-                                                a{
-                                                    display: inline-flex;
-                                                    @include fullsize;
-                                                    img{
-                                                        @include img-cover;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    .home{
-                                        @include flex-column-center;
-                                        width: 60px;
-                                        height: 60px;
-                                        border-radius: 50%;
-                                        background-color: #d6211e;
-                                        gap: 5px;
-                                        font-size: 12px;
-                                        font-weight: normal;
-                                        color: #fff;
-                                    }
+                                    margin: 50px 0 100px;
                                 }
                             }
                         }
                     }
                     &.load{
+                        &::before{
+                            @include el-hide;
+                            @include drag-off;
+                        }
                         article{
                             .wrap{
-                                .video{
-                                    background-color: transparent;
-                                    top: 0%;
-                                    left: 50%;
-                                    transform: translate(-50%,0%);
-                                    &::before{
-                                        @include el-hide;
-                                        @include drag-off;
+                                .video-box{
+                                    >*{
+                                        top: 0%;
+                                    transform: translate(-50%, 0);
                                     }
-                                }
-                                .box{
-                                    opacity: 1;
                                 }
                             }
                         }
                     }    
+                }
+                &.footer-wrap{
+                    article{
+                        .wrap{
+                            position: fixed;
+                            bottom: 0;
+                            z-index: 2;
+                            @include flex-center;
+                            padding: 10px 10px;
+                            background-color: #EDEDED;
+                            gap: 20px;
+                            .swiper{
+                                width: calc(100% - 20px - 60px);
+                                aspect-ratio: 273/60;
+                                .swiper-wrapper{
+                                    @include fullsize;
+                                    .swiper-slide{
+                                        @include fullsize;
+                                        a{
+                                            display: inline-flex;
+                                            @include fullsize;
+                                            img{
+                                                @include img-cover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .home{
+                                @include flex-column-center;
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                background-color: #d6211e;
+                                gap: 5px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                color: #fff;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -456,6 +465,80 @@ main {
         }
     }
 
+}
+
+.language_tab{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 20px;
+    position: relative;
+    ul{
+        width: 100%;
+        li{
+            width: 100%;
+            a{
+                width: 100%;
+                padding: 20px 15px;
+                @include flex-space-center;
+                margin-bottom: 10px;
+                background-color: #f6f6f6;
+                border: 1px solid #f6f6f6;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                @include transition(.15s);    
+                .left{
+                    @include flex-center;
+                    gap: 20px;
+                }
+                .right{
+                    .check{
+                        width: 20px;
+                        height: 20px;
+                        svg{
+                            @include fullsize;
+                            circle,path{
+                                @include transition(.15s);
+                            }
+                        }
+                    }
+                }
+            }
+            &.active{
+                a{
+                    border-color: #D6211E;
+                    background-color: #FFF0F0;    
+                    .right{
+                        .check{
+                            svg{
+                                circle{
+                                    fill: #D6211E;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .close{
+        position: sticky;
+        // right: 20px;
+        bottom: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include drag-off;
+        a{
+            @include drag-on;
+            @include flex-center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: #144987;
+        }
+    }
 }
 
 .list_1 {
@@ -633,7 +716,10 @@ main {
 
 .more-title {
     font-size: 14px;
-    @include flex-space-center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
     font-weight: normal;
 
     span {
@@ -725,7 +811,7 @@ main {
             width: 100%;
 
             .swiper-slide {
-                width: 100%;
+                width: calc(100% / 1.9);
                 border-radius: 10px;
                 border: .5px solid #EDEDED;
                 overflow: hidden;
@@ -752,16 +838,37 @@ main {
     }
 }
 
+.popup_test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 20px);
+    margin: 30px auto 0;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(.3s);
+    &:hover{
+        background-color: #d6211e;
+        color: #fff;    
+    }
+}
+
 .text01 {
     padding: 15px 10px;
     position: relative;
     h5 {
+        width: 100%;
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 5px;
     }
 
     p {
+        width: 100%;
         font-size: 12px;
         font-weight: normal;
     }
@@ -892,7 +999,7 @@ main {
     }
     &.menu-more{
         @include fullsize;
-        max-width: 400px;
+        max-width: 500px;
         overflow-x: auto;
         @include el-hide;
         @include drag-off;

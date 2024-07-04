@@ -30,12 +30,12 @@ header{
                 font-size: 12px;
                 font-weight: normal;
                 line-height: 1;
-                @include transition(.3s);
+                @include transition(.15s);
                 white-space: nowrap;
                 a{
                     @include flex-center;
                     @include fullsize;
-                    @include transition(.3s);
+                    @include transition(.15s);
                 }
                 &.active{
                     background-color: #000;
@@ -76,6 +76,18 @@ footer{
                     font-size: 12px;
                     font-weight: normal;
                     color: #909090;
+                    &:not(.order){
+                        .icon-wrap{
+                            width: 20px;
+                            height: 20px;
+                            svg{
+                                @include fullsize;
+                            }
+                            img{
+                                @include img-cover;
+                            }
+                        }
+                    }
                     &.order{
                         padding-top: 30px;
                         position: relative;
@@ -87,6 +99,22 @@ footer{
                             position: absolute;
                             border-radius: 50%;
                             top: -45px;
+                            z-index: 2;
+                            .total_value{
+                                font-size: 30px;
+                                font-weight: bold;
+                                color: #fff;
+                                position: absolute;
+                                @include fullsize;
+                                @include flex-center;
+                                z-index: 1;
+                                border-radius: 50%;
+                                background-color: #d6211e;
+                                @include el-hide;
+                                &.active{
+                                    @include el-fade;
+                                }
+                            }
                         }
                     }
                 }
@@ -96,5 +124,5 @@ footer{
 }
 
 header,footer{
-    max-width: 400px;
+    max-width: 500px;
 }

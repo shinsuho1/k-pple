@@ -1,42 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테스트</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/aos.css">
-
-
-    <link rel="canonical" href="테스트">
-    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon"> <!-- favicon -->
-
-    <meta name="keywords" content="테스트">
-    <meta name="description" content="테스트">
-    <meta name="author" content="urlLink">
-
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="테스트">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:url" content="urlLink">
-    <meta property="og:image" content="../images/common/og.png"> <!-- og -->
-    <meta property="og:title" content="테스트">
-
-
-    <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="테스트">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:url" content="urlLink">
-    <meta name="twitter:image" content="../images/common/og.png"> <!-- og -->
-
-</head>
+<?php
+include_once "../include/header.html";
+?>
 
 <main id="subPage" class="order">
     <section class="s01">
         <article>
             <div class="wrap">
-                <div class="video">
+                <div class="video-box">
                     <img src="../images/order/video.png" alt="video">
                 </div>
                 <div class="box">
@@ -49,8 +19,16 @@
                                     </div>
                                     <div class="info">
                                         <div class="text">
-                                            <h2>신당동 떡볶이</h2>
-                                            <p>sindangdong tteokbokki</p>
+                                            <h2 class="a_1">
+                                                <span>
+                                                    신당동 떡볶이
+                                                </span>
+                                            </h2>
+                                            <p class="a_1">
+                                                <span>
+                                                    sindangdong tteokbokki
+                                                </span>
+                                            </p>
                                             <div class="price">
                                                 <strong>₩27,000</strong> <span>(2인분)</span>
                                             </div>
@@ -69,8 +47,16 @@
                                             </div>
                                             <div class="info">
                                                 <div class="text">
-                                                    <h2>떡추가</h2>
-                                                    <p>tteok chuga</p>
+                                                    <h2 class="a_1">
+                                                        <span>
+                                                            떡추가
+                                                        </span>
+                                                    </h2>
+                                                    <p class="a_1">
+                                                        <span>
+                                                            tteok chuga
+                                                        </span>
+                                                    </p>
                                                     <div class="price">
                                                         <strong>₩4,000</strong>
                                                     </div>
@@ -91,8 +77,16 @@
                                             </div>
                                             <div class="info">
                                                 <div class="text">
-                                                    <h2>오뎅추가</h2>
-                                                    <p>odeng chuga</p>
+                                                    <h2 class="a_1">
+                                                        <span>
+                                                            오뎅추가
+                                                        </span>
+                                                    </h2>
+                                                    <p class="a_1">
+                                                        <span>
+                                                            odeng chuga
+                                                        </span>
+                                                    </p>
                                                     <div class="price">
                                                         <strong>₩4,000</strong>
                                                     </div>
@@ -122,43 +116,51 @@
                     <h3>
                         WE ACCEPT ONLY CASH
                     </h3>
-                    <div class="bottom">
-                        <div class="swiper order_banner">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="javascript:alret('준비중')">
-                                        <img src="../images/order/banner01.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript:alret('준비중')">
-                                        <img src="../images/order/banner01.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="../main/index.html" class="home">
-                            <img src="../images/common/home.svg" alt="home">
-                            <span>HOME</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </article>
     </section>
+    <section class="footer-wrap">
+        <article>
+            <div class="wrap">
+                <div class="swiper order_banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:alret('준비중')">
+                                <img src="../images/order/banner01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:alret('준비중')">
+                                <img src="../images/order/banner01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="../main/index.html" class="home">
+                    <img src="../images/common/home.svg" alt="home">
+                    <span>HOME</span>
+                </a>
+            </div>
+        </article>
+    </section>
+    <div class="popup warning">
+        <div class="img-wrap">
+            <img src="../images/common/popup_warning.svg" alt="">
+        </div>
+        <p>
+            Wait! <br />
+            Did you show the menu <br />
+            to the employee? <br />
+        </p>
+        <a href="../main/index.html" class="did">Yes, I Did</a>
+        <a href="" class="close_btn">Return to Menu</a>
+    </div>
 </main>
+</body>
 
-<script>
-    window.addEventListener("DOMContentLoaded", function() {
-        setTimeout(() => {
-            document.querySelector("section.s01").classList.add("load")
-        }, 1000);
-    });
-</script>
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/swiper-bundle.min.js"></script>
-<script src="../js/aos.js"></script>
-<script src="../js/index.js"></script>
 
-</html>
+<?php
+include_once "../include/footer.html";
+?>

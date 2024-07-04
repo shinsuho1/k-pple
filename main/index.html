@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테스트</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/aos.css">
-
-
-    <link rel="canonical" href="테스트">
-    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon"> <!-- favicon -->
-
-    <meta name="keywords" content="테스트">
-    <meta name="description" content="테스트">
-    <meta name="author" content="urlLink">
-
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="테스트">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:url" content="urlLink">
-    <meta property="og:image" content="../images/common/og.png"> <!-- og -->
-    <meta property="og:title" content="테스트">
-
-
-    <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="테스트">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:url" content="urlLink">
-    <meta name="twitter:image" content="../images/common/og.png"> <!-- og -->
-
-</head>
-
-<body>
+<?php
+    include_once "../include/header.html";
+?>
+    <!-- load되면 ul안에 li로 추가 됩니다. -->
     <header>
         <div class="header-wrap">
             <ul>
-                <li class="active"><a href="#none">TTEOKBOKKI</a></li>
-                <li><a href="#none">GIMBAP</a></li>
-                <li><a href="#none">SIDE</a></li>
-                <li><a href="#none">add ingredients</a></li>
             </ul>
         </div>
     </header>
@@ -52,8 +17,8 @@
                         K-PPLE
                     </div>
                     <div class="toggle">
-                        <a href="javascript:alret('준비중')" class="active">Stay</a>
-                        <a href="javascript:alret('준비중')">To Go</a>
+                        <a href="javascript:alert('준비중')" class="active">Stay</a>
+                        <a href="javascript:alert('준비중')">To Go</a>
                         <div class="toggle_bg left"></div>
                     </div>
                 </div>
@@ -69,7 +34,7 @@
                         <div class="left">
                             <h1 class="a_1">
                                 <span>
-                                    I LOVE SINDANGDONGI asd
+                                    I LOVE SINDANGDONGI 
                                 </span>
                             </h1>
                             <p class="a_1">
@@ -91,7 +56,7 @@
         <section class="s02">
             <article>
                 <div class="wrap">
-                    <h2 class="a_1">
+                    <h2 class="a_1" data-aos="">
                         <span>
                             TTEOKBOKKI MENU
                         </span>
@@ -115,7 +80,7 @@
                                         <li><img src="../images/common/spicy.svg" alt=""></li>
                                     </ul>
                                 </div>
-                                <div class="select-menu">
+                                <div class="select-menu main_option">
                                     <a class="minus" href="#none">
                                         <img src="../images/common/minus.svg" alt="">
                                     </a>
@@ -141,7 +106,7 @@
                                 </span>
                             </p>
                             <div class="more-title">
-                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sigasd</span>
+                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
                                 <a href="#none" class="more">more</a>
                             </div>
                             <ul class="person_tab">
@@ -181,7 +146,9 @@
                             </ul>
                             <div class="menu-option">
                                 <div class="title">
-                                    <span class="ellipsis_line1">Select additional menus that can be ordered with The with with with </span>
+                                    <div class="a_1">
+                                        <span>Select additional menus that can be ordered with The with that can be ordered with The with</span>
+                                    </div>
                                     <div class="pagination"></div>
                                 </div>
                                 <div class="swiper">
@@ -372,7 +339,7 @@
                                         <li><img src="../images/common/spicy.svg" alt=""></li>
                                     </ul>
                                 </div>
-                                <div class="select-menu">
+                                <div class="select-menu main_option">
                                     <a class="minus" href="#none">
                                         <img src="../images/common/minus.svg" alt="">
                                     </a>
@@ -398,7 +365,7 @@
                                 </span>
                             </p>
                             <div class="more-title">
-                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sigasd</span>
+                                <span>Sindangdong tteokbokki is I Love Sindangdong’s sig</span>
                                 <a href="#none" class="more">more</a>
                             </div>
                             <ul class="person_tab">
@@ -438,7 +405,9 @@
                             </ul>
                             <div class="menu-option">
                                 <div class="title">
-                                    <span class="ellipsis_line1">Select additional menus that can be ordered with The with with with </span>
+                                    <div class="a_1">
+                                        <span>Select additional menus that can be ordered with The with with with</span>
+                                    </div>
                                     <div class="pagination"></div>
                                 </div>
                                 <div class="swiper">
@@ -613,7 +582,7 @@
                     </div>
 
                     <div class="list_2">
-                        <h2 class="a_1">
+                        <h2 class="a_1" data-aos="">
                             <span>
                                 ADD INGREDIENTS
                             </span>
@@ -639,7 +608,7 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -670,7 +639,7 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -701,7 +670,7 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -715,7 +684,7 @@
                         </ul>
                     </div>
                     <div class="list_2">
-                        <h2 class="a_1">
+                        <h2 class="a_1" data-aos="">
                             <span>
                                 DRINK MENU
                             </span>
@@ -737,7 +706,7 @@
                                         </span>
                                     </p>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -764,7 +733,7 @@
                                         </span>
                                     </p>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -795,7 +764,7 @@
                                         <a href="" class="more">more</a>
                                     </div>
                                     <div class="price">₩4,000</div>
-                                    <div class="select-menu">
+                                    <div class="select-menu main_option">
                                         <a class="minus" href="#none">
                                             <img src="../images/common/minus.svg" alt="">
                                         </a>
@@ -811,10 +780,12 @@
                 </div>
             </article>
         </section>
-        <!-- 해당 부분은 팝업의 -->
-        <div class="popup_test">cancel</div>
-        <!--  -->
-        <div class="popup_test">warning</div>
+
+        <!-- 
+            [팝업] 메뉴를 담지 않은 상태에서 옵션(사리)추가를 누르면 띄워 줍니다. 
+            해당 팝업에 active, class="dark-bg"에 active시 활성화
+        -->
+        <div class="popup_test">팝업1(클릭)</div>        
     </main>
 
     <div class="popup cancel">
@@ -827,18 +798,7 @@
         </p>
         <a href="" class="close_btn">Continue Shopping</a>
     </div>
-    <div class="popup warning">
-        <div class="img-wrap">
-            <img src="../images/common/popup_warning.svg" alt="">
-        </div>
-        <p>
-            Wait! <br />
-            Did you show the menu <br />
-            to the employee? <br />
-        </p>
-        <a href="" class="did">Yes, I Did</a>
-        <a href="" class="close_btn">Return to Menu</a>
-    </div>
+
     <div class="popup menu-more">
         <div class="wrap">
             <div class="thumbnail">
@@ -930,14 +890,13 @@
             </div>
         </div>
     </div>
-    <div class="dark-bg">
-    </div>
+
     <footer>
         <div class="footer-wrap">
             <ul>
                 <li>
-                    <a href="#none" class="language">
-                        <div class="icon-wrap"><img src="../images/common/icon_language.svg" alt="LANGUAGE"></div>
+                    <a href="../language/index.html" class="language">
+                        <div class="icon-wrap"><img src="../images/language/lang02.svg" alt="LANGUAGE"></div>
                         <p>LANGUAGE</p>
                     </a>
                 </li>
@@ -955,41 +914,16 @@
                 </li>
                 <li>
                     <a href="../order/index.html" class="order">
-                        <div class="icon-wrap"><img src="../images/common/order.svg" alt=""></div>
+                        <div class="icon-wrap">
+                            <img src="../images/common/order.svg" alt="order">
+                            <span class="total_value">0</span>
+                        </div>
                         <p>ORDER</p>
                     </a>
                 </li>
             </ul>
         </div>
     </footer>
-</body>
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/swiper-bundle.min.js"></script>
-<script src="../js/aos.js"></script>
-<script src="../js/index.js"></script>
-<script>
-    let toggle_toggle_bg = document.querySelector("section.header .toggle .toggle_bg"),
-        toggle_btn = document.querySelectorAll("section.header .toggle a");
-    document.querySelectorAll("section.header .toggle a").forEach(function(el, index) {
-        el.addEventListener("mouseenter", function(e) {
-            document.querySelector(".toggle a.active").classList.remove("active");
-            if (index == 0) {
-                if (toggle_toggle_bg.classList.contains("right")) toggle_toggle_bg.classList.remove("right");
-                toggle_toggle_bg.classList.add("left");
-                toggle_btn[index].classList.add("active");
-
-            } else if (index == 1) {
-                if (toggle_toggle_bg.classList.contains("left")) toggle_toggle_bg.classList.remove("left");
-                toggle_toggle_bg.classList.add("right")
-                toggle_btn[index].classList.add("active");
-            }
-        });
-    });
-</script>
-<script>
-    AOS.init({
-        duration: 1000,
-    })
-</script>
-</html>
+<?php
+    include_once "../include/footer.html";
+?>

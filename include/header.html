@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테스트</title>
+    <title>K-PPLE</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/aos.css">
+    <!-- <link rel="stylesheet" href="../css/aos.css"> -->
 
 
-    <link rel="canonical" href="테스트">
+    <link rel="canonical" href="K-PPLE">
     <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon"> <!-- favicon -->
 
-    <meta name="keywords" content="테스트">
-    <meta name="description" content="테스트">
+    <meta name="keywords" content="K-PPLE">
+    <meta name="description" content="K-PPLE">
     <meta name="author" content="urlLink">
 
     <meta property="og:type" content="website">
-    <meta property="og:description" content="테스트">
+    <meta property="og:description" content="K-PPLE">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:url" content="urlLink">
     <meta property="og:image" content="../images/common/og.png"> <!-- og -->
-    <meta property="og:title" content="테스트">
+    <meta property="og:title" content="K-PPLE">
 
 
     <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="테스트">
+    <meta name="twitter:title" content="K-PPLE">
     <meta name="twitter:description" content="">
     <meta name="twitter:url" content="urlLink">
     <meta name="twitter:image" content="../images/common/og.png"> <!-- og -->
@@ -33,35 +33,5 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-wrap">
-            <div class="logo">
-                K-PPLE
-            </div>
-            <div class="toggle">
-                <a href="javascript:alret('준비중')" class="active">Stay</a>
-                <a href="javascript:alret('준비중')">To Go</a>
-                <div class="toggle_bg left"></div>
-            </div>
-        </div>
-    </header>
-
-    <script>
-        let toggle_toggle_bg = document.querySelector("header .toggle .toggle_bg"),
-            toggle_btn = document.querySelectorAll("header .toggle a");
-        document.querySelectorAll("header .toggle a").forEach(function(el, index) {
-            el.addEventListener("mouseenter", function(e) {
-                document.querySelector(".toggle a.active").classList.remove("active");
-                if (index == 0) {
-                    if (toggle_toggle_bg.classList.contains("right")) toggle_toggle_bg.classList.remove("right");
-                    toggle_toggle_bg.classList.add("left");
-                    toggle_btn[index].classList.add("active");
-
-                } else if (index == 1) {
-                    if (toggle_toggle_bg.classList.contains("left")) toggle_toggle_bg.classList.remove("left");
-                    toggle_toggle_bg.classList.add("right")
-                    toggle_btn[index].classList.add("active");
-                }
-            });
-        });
-    </script>
+    <div class="dark-bg">
+    </div>
