@@ -6,15 +6,16 @@ let html = document.querySelector("html"),
     header = document.querySelector("header"),
     footer = document.querySelector("footer");
 
+// 페이지 로딩 시 위에서 시작
 window.addEventListener("load", function () {
     setTimeout(() => {
         window.scrollTo({ top: 0 });
     }, 100);
-
 });
 
-if(url == "main" || url == "order"){
-    window.addEventListener("DOMContentLoaded",function(){
+// main, order 공통
+if (url == "main" || url == "order") {
+    window.addEventListener("DOMContentLoaded", function () {
         let a_1 = document.querySelectorAll(".a_1");
         a_1.forEach(function (el) {
             if (el.querySelector("span").getBoundingClientRect().width >= el.getBoundingClientRect().width) {
@@ -26,18 +27,19 @@ if(url == "main" || url == "order"){
             }
         });
     });
-    document.querySelector(".dark-bg").addEventListener("click",function(e){
+    document.querySelector(".dark-bg").addEventListener("click", function (e) {
         document.querySelector(".popup.active").classList.remove("active");
         document.querySelector(".dark-bg").classList.remove("active");
-    })
+    });
 }
 
-
+// main
 if (url == "main") {
 
-    let total = 0;
+    let total = 0,
+        t = 0;
     window.addEventListener("DOMContentLoaded", function () {
-        
+
         let toggle_toggle_bg = document.querySelector("section.header .toggle .toggle_bg"),
             toggle_btn = document.querySelectorAll("section.header .toggle a");
         document.querySelectorAll("section.header .toggle a").forEach(function (el, index) {
@@ -101,7 +103,7 @@ if (url == "main") {
                 spaceBetween: 10,
                 pagination: {
                     el: ele.parentElement.querySelector(".pagination"),
-                    clickable: true,
+                    type: "fraction",
                 },
                 on: {
                     init: function (swiper) {
@@ -110,7 +112,6 @@ if (url == "main") {
                 }
             })
         });
-
 
         document.querySelectorAll("main .more").forEach(function (el) {
             el.addEventListener("click", function (e) {
@@ -127,7 +128,6 @@ if (url == "main") {
             body.classList.remove("stop_scroll")
         });
 
-
         document.querySelectorAll(".person_tab").forEach(function (ele, idx) {
             let el_li = ele.querySelectorAll("li");
             el_li.forEach(function (el, index) {
@@ -143,6 +143,7 @@ if (url == "main") {
             let value = el.querySelector(".value"),
                 count = 0;
             el.addEventListener("click", function (e) {
+                t = 10;
                 count = 0;
                 total = 0;
                 let total_element = document.querySelectorAll(".select-menu.main_option .value");
@@ -221,29 +222,42 @@ if (url == "main") {
             }
         });
 
-        document.querySelector(".order").addEventListener("click",function(e){
-            if(total <= 0){
+        document.querySelector(".order").addEventListener("click", function (e) {
+            if (total <= 0) {
                 e.preventDefault();
                 alert("Please select one or more menus.");
             }
         });
+
+        let s = 0,
+            selectMenuMove = setInterval(() => {
+                s++;
+                document.querySelectorAll(".select-menu")[0].classList.add('active');
+                if (s >= 2) {
+                    if (t >= 5) {
+                        clearInterval(selectMenuMove);
+                    }
+                    document.querySelectorAll(".select-menu")[0].classList.remove('active');
+                    s = 0;
+                    t++;
+                }
+            }, 2000);
     });
     let pop_more_btn = document.querySelector(".popup.menu-more .more");
-    // console.log(document.querySelector(".more-wrap span.txt").getBoundingClientRect().height)
-    // if(document.querySelector(".more-wrap span.txt").getBoundingClientRect().height <= 38){
-    //     pop_more_btn.classList.add("hide");
-    //     document.querySelector(".more-wrap span.txt").classList.add("not_clamp");
-    // }else{
-    //     document.querySelector(".more-wrap span.txt").classList.add("clamp");
-    // }
 
     pop_more_btn.addEventListener("click", function (e) {
         e.preventDefault();
         pop_more_btn.previousElementSibling.classList.add("active");
         pop_more_btn.classList.add("hide");
     });
+    if (document.querySelector(".more-wrap .txt").getBoundingClientRect().height >= 38) {
+        pop_more_btn.previousElementSibling.classList.remove("active");
+        pop_more_btn.classList.remove("hide");
+    }
 }
 
+
+// order
 if (url == "order") {
     document.querySelector(".home").addEventListener("click", function (e) {
         let popup = document.querySelector(".popup");

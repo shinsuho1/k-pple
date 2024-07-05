@@ -44,10 +44,12 @@ include_once "../include/header.html";
                         </p>
                     </div>
                     <div class="right">
+                        <a href="javascript:alert('Coming soon')">
                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.44444 14.2663L4.22578 17L5.22222 11.211L1 7.112L6.83434 6.26629L9.44444 1L12.0545 6.26629L17.8889 7.112L13.6667 11.211L14.6631 17L9.44444 14.2663Z" fill="#FFB930" stroke="#FFB930" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>4.8</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -781,10 +783,10 @@ include_once "../include/header.html";
         </article>
     </section>
 
-    <!-- 
-            [팝업] 메뉴를 담지 않은 상태에서 옵션(사리)추가를 누르면 띄워 줍니다. 
-            해당 팝업에 active, class="dark-bg"에 active시 활성화
-        -->
+    <!-- 메모
+        [팝업] 메뉴를 담지 않은 상태에서 옵션(사리)추가를 누르면 띄워 줍니다. 
+        .popup.cancel에 클래스(active), dark-bg에 클래스(active)시 활성화
+    -->
     <div class="popup_test">팝업1(클릭)</div>
 </main>
 
@@ -839,23 +841,22 @@ include_once "../include/header.html";
                 </h3>
                 <p class="sub-title">
                     신당동떡볶이
-                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="active">
+                    <!-- 메모
+                         해당 svg에 클래스 active 추가할 시 색 변합니다 -> 발음 실행 후 클래스 삭제
+                     -->
+                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.8782 4.09293C13.1236 3.84757 13.5269 3.86198 13.7527 4.12541C14.8046 5.35121 15.3589 6.74323 15.3623 8.18396C15.3623 8.18862 15.3623 8.19349 15.3623 8.19816C15.3623 9.63645 14.8131 11.024 13.7669 12.2451C13.5411 12.5088 13.1378 12.5232 12.8922 12.2778C12.6724 12.058 12.6576 11.7055 12.8598 11.4693C13.7182 10.4665 14.1686 9.34502 14.1686 8.19796C14.1686 8.19431 14.1686 8.19065 14.1686 8.187C14.1657 7.03669 13.7103 5.91013 12.8458 4.90188C12.6434 4.66545 12.6582 4.31273 12.8782 4.09293Z" fill="#5A5A5A" />
                         <path d="M15.4255 13.6112C18.449 10.2662 18.449 6.10514 15.4255 2.76016C15.212 2.52393 15.2197 2.16207 15.4449 1.9368C15.686 1.6957 16.0804 1.70463 16.3091 1.9573C17.999 3.82421 18.8884 5.96592 18.8884 8.18556C18.8884 10.4052 17.999 12.5471 16.3091 14.4138C16.0804 14.6665 15.686 14.6754 15.4449 14.4343C15.2199 14.2093 15.212 13.8474 15.4255 13.6112Z" fill="#5A5A5A" />
                         <path d="M11.3194 0.931007V15.0684C11.3194 15.3494 11.1983 15.6206 10.9787 15.7965C10.8106 15.9313 10.6083 16.0001 10.4039 16.0001C10.2771 16.0001 10.1492 15.9735 10.0291 15.9197L4.42365 12.2324H0.915904C0.409955 12.2322 0 11.822 0 11.3163V5.21219C0 4.70645 0.409955 4.29629 0.915904 4.29629H4.3993L9.97549 0.107242C10.2736 -0.0504481 10.6268 -0.0338064 10.9107 0.154326C11.1694 0.325614 11.3194 0.620294 11.3194 0.931007Z" fill="#5A5A5A" />
                     </svg>
                 </p>
                 <div class="more-title">
-                    <!-- <span class="txt">
-                        Sindangdong tteokbokki is I Love Sindangdong’s
-                        signature tteokbokki with 40 years of hist years of hist years of hist years of hist
-                    </span> -->
                     <p class="more-wrap">
-                        <span class="txt">
+                        <span class="txt active">
                             Sindangdong tteokbokki is I Love Sindangdong’s
                             signature tteokbokki with 40 years of hist years of hist years of hist years of hist
                         </span>
-                        <a href="" class="more"><span>...</span> more</a>
+                        <a href="" class="more hide"><span>...</span> more</a>
                     </p>
                 </div>
             </div>
@@ -887,7 +888,7 @@ include_once "../include/header.html";
                         </span>
                         <div class="slide">
                             <div class="img-wrap">
-                                <img src="../images/main/kimchi.png" alt="">
+                                <img src="../images/main/kimchi.png" alt="kimchi">
                             </div>
                             <span>
                                 For kimchi, salted cabbage is red pepper powder,
@@ -913,13 +914,13 @@ include_once "../include/header.html";
                 </a>
             </li>
             <li>
-                <a href="#none" class="restaurant">
+                <a href="javascript:alert('Coming soon')" class="restaurant">
                     <div class="icon-wrap"><img src="../images/common/icon_restaurant.svg" alt="RESTAURANT"></div>
                     <p>RESTAURANT</p>
                 </a>
             </li>
             <li>
-                <a href="#none" class="top">
+                <a href="scroll_top" class="top">
                     <div class="icon-wrap"><img src="../images/common/icon_top.svg" alt="top"></div>
                     <p>TOP</p>
                 </a>
@@ -939,12 +940,3 @@ include_once "../include/header.html";
 <?php
 include_once "../include/footer.html";
 ?>
-
-<script>
-    document.querySelector(".popup.menu-more").addEventListener("dragstart", function(e) {
-        console.log(e)
-    });
-    document.querySelector(".popup.menu-more").addEventListener("dragend", function(e){
-        console.log(e)
-    });
-</script>

@@ -161,16 +161,19 @@ main {
                                 width: 52px;
                                 height: 52px;
                                 min-width: 52px;
-                                @include flex-column-center;
-                                background-color: #f8f8f8;
-                                border-radius: 50%;
-                                gap: 2px;
-
-                                span {
-                                    font-family: 'Noto Sans';
-                                    font-size: 12px;
-                                    font-weight: 500;
-                                }
+                                a{
+                                    @include fullsize;
+                                    @include flex-column-center;
+                                    background-color: #f8f8f8;
+                                    border-radius: 50%;
+                                    gap: 2px;
+    
+                                    span {
+                                        font-family: 'Noto Sans';
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                    }
+                                    }
                             }
                         }
 
@@ -525,7 +528,6 @@ main {
     }
     .close{
         position: sticky;
-        // right: 20px;
         bottom: 30px;
         width: 100%;
         display: flex;
@@ -538,7 +540,7 @@ main {
             width: 38px;
             height: 38px;
             border-radius: 50%;
-            background-color: #144987;
+            background-color: #888;
         }
     }
 }
@@ -660,6 +662,7 @@ main {
         line-height: 1;
         @include transition(.5s);
         border-radius: 50%;
+        cursor: pointer;
     }
     .plus{
         right: -1px;
@@ -790,15 +793,29 @@ main {
             width: initial;
             @include flex-center;
             gap: 5px;
+            line-height: 1;
+            span{
+                @include flex-center;
+                gap: 7px;
+                &:first-child{
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 7px;
+                        aspect-ratio: 7/11;
+                        @include bg-cover("../images/common/pagination_arrow.svg");
+                        transform: scaleX(-1);
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 7px;
+                        aspect-ratio: 7/11;
+                        @include bg-cover("../images/common/pagination_arrow.svg");
 
-            span {
-                margin: 0;
-                width: 5px;
-                height: 5px;
-                background-color: #d0d0d0;
-                @include transition(.15s);
-                &.swiper-pagination-bullet-active {
-                    background-color: #000;
+                    }
                 }
             }
         }
@@ -1001,21 +1018,22 @@ main {
     &.menu-more{
         @include fullsize;
         max-width: 500px;
-        // overflow-x: auto;
+        overflow-x: auto;
         @include el-hide;
         @include drag-off;
         .wrap{
             width: 100%;
-            margin-top: 330px;
-            border-radius: 20px;
+            border-radius: 20px 20px 0 0;
             overflow: hidden;
             background-color: #ededed;
-            position: relative;
+            position: absolute;
             z-index: 2;
+            top: 100px;
             .thumbnail{
                 width: 100%;
                 aspect-ratio: 400/238;
                 position: relative;
+                z-index: 2;
                 .line1{
                     content: "";
                     width: 100px;
@@ -1025,7 +1043,7 @@ main {
                     position: absolute;
                     top: 10px;
                     left: 50%;
-                    transform: translateX(-50%)
+                    transform: translateX(-50%);
                 }
                 .img-wrap{
                     @include fullsize;
@@ -1085,7 +1103,9 @@ main {
                 }
             }
             .info{
-                padding: 40px 10px 110px;
+                padding: 40px 10px 100px;
+                position: relative;
+                z-index: 1;
                 .text{
                     padding: 0px 10px;
                     h3{
@@ -1138,7 +1158,6 @@ main {
                             right: 0;
                             bottom: 0;
                             @include flex-center;
-                            // width: 51.7px;
                             gap: 2.8px;
                             background-color: #ededed;
                             span{
@@ -1224,16 +1243,13 @@ main {
                     width: 38px;
                     height: 38px;
                     border-radius: 50%;
-                    background-color: #144987;
-                    margin-top: 60px;
+                    background-color: #888;
                     position: absolute;
                     bottom: 20px;
                     right: 20px;
                 }        
             }
         }
-
-
     }
     &.active{
         @include el-fade;
