@@ -509,6 +509,21 @@ main {
                     }
                 }
             }
+            &:hover{
+                a{
+                    border-color: #D6211E;
+                    background-color: #FFF0F0;    
+                    .right{
+                        .check{
+                            svg{
+                                circle{
+                                    fill: #D6211E;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             &.active{
                 a{
                     border-color: #D6211E;
