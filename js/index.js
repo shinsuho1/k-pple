@@ -234,7 +234,7 @@ if (url == "main") {
                 s++;
                 document.querySelectorAll(".select-menu")[0].classList.add('active');
                 if (s >= 2) {
-                    if (t >= 5) {
+                    if (t >= 1) {
                         clearInterval(selectMenuMove);
                     }
                     document.querySelectorAll(".select-menu")[0].classList.remove('active');
@@ -242,18 +242,57 @@ if (url == "main") {
                     t++;
                 }
             }, 2000);
-    });
-    let pop_more_btn = document.querySelector(".popup.menu-more .more");
 
-    pop_more_btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        pop_more_btn.previousElementSibling.classList.add("active");
-        pop_more_btn.classList.add("hide");
+        function select_function(e){
+            e.classList.add("active");
+            setTimeout(() => {
+                e.classList.remove("active");
+            }, 1000);
+        }
+        setTimeout(() => {
+            window.addEventListener("scroll", function(e) {
+                let m = document.querySelectorAll(".select-menu");
+                m.forEach(function(el,index){
+                    if(index == 0) return false;
+                    if(0 == index % 2 || el.classList.contains("stop_event")) return false;
+                    if(el.classList.contains("aos-animate")){
+                        select_function(el);
+                        el.classList.add("stop_event");
+                    }
+                });
+            });
+
+        }, 0);
     });
-    if (document.querySelector(".more-wrap .txt").getBoundingClientRect().height >= 38) {
-        pop_more_btn.previousElementSibling.classList.remove("active");
-        pop_more_btn.classList.remove("hide");
-    }
+
+    document.querySelector("footer .restaurant").addEventListener("click",function(e){
+        e.preventDefault();
+        document.querySelector(".popup.restaurant").classList.add("active");
+        document.querySelector(".dark-bg").classList.add("active");
+        body.classList.add("stop_scroll");
+    });
+    
+    document.querySelectorAll(".popup .more-wrap .more").forEach(function(el,index){
+        el.addEventListener("click",function(e){
+            e.preventDefault();
+            el.previousElementSibling.classList.add("active");
+            el.classList.add("hide");
+        });
+    });
+
+    document.querySelector(".popup.restaurant .close_btn").addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(".dark-bg").classList.remove("active");
+        document.querySelector(".popup.restaurant").classList.remove("active");
+        body.classList.remove("stop_scroll")
+    });
+    
+    document.querySelectorAll(".popup .more-wrap .txt").forEach((function(el,index){
+        if(el.getBoundingClientRect().height >= 38){
+            el.classList.remove("active");
+            el.nextElementSibling .classList.remove("hide");
+        }
+    }))
 }
 
 

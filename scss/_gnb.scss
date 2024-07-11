@@ -5,7 +5,7 @@ header{
     top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 15px 10px;
+    padding: 10px 10px;
     z-index: 50;
     @include transition(.3s);
     .header-wrap{
@@ -27,7 +27,7 @@ header{
                 border: 1px solid #d9d9d9;
                 padding: 8px 15px;
                 color: #8c8c8c;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: normal;
                 line-height: 1;
                 @include transition(.15s);
@@ -59,7 +59,7 @@ footer{
     .footer-wrap{
         width: 100%;
         background-color: #fff;
-        padding: 15px 0;
+        padding: 8px 0;
         ul{
             @include fullsize;
             @include flex-center;
@@ -72,8 +72,8 @@ footer{
                     justify-content: flex-end;
                     align-items: center;
                     flex-direction: column;
-                    gap: 10px;
-                    font-size: 12px;
+                    gap: 5px;
+                    font-size: 10px;
                     font-weight: normal;
                     color: #909090;
                     &:not(.order){
@@ -88,12 +88,6 @@ footer{
                             }
                         }
                     }
-                    &.language{
-                        .icon-wrap{
-                            border: 1px solid #ddd;
-                            border-radius: 50%;
-                        }
-                    }
                     &.order{
                         padding-top: 30px;
                         position: relative;
@@ -104,7 +98,7 @@ footer{
                             @include flex-center;
                             position: absolute;
                             border-radius: 50%;
-                            top: -45px;
+                            top: -37px;
                             z-index: 2;
                             .total_value{
                                 font-size: 30px;
